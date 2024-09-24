@@ -62,20 +62,13 @@ public class Ejercicios1 {
         System.out.print("Introduce una cantidad de segundos: ");
         int segundos = scanner.nextInt();
         int horas = segundos / 3600;
+        //Guarda el resto de los valores que no se han contado como horas
         int restoSegundos = segundos % 3600;
         int minutos = restoSegundos / 60;
         restoSegundos %= 60;
         System.out.println(horas +" horas, " +minutos+" minutos y " + restoSegundos + " segundos.");
 
         //Ejercicio 6
-        System.out.print("Introduce un número de 5 cifras: ");
-        int xn = scanner.nextInt();
-        for (int i = 0; i < 5; i ++){
-            int nx = xn % 10;
-            System.out.print(nx + " ");
-            xn /= 10;
-        }
-        //Ejercicio 6 opción 2
         System.out.print("\nIntroduce otro número de 5 cifras: ");
         int numx = scanner.nextInt();
         int x1 = numx % 10;
