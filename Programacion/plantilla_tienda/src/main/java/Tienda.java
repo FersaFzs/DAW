@@ -104,19 +104,19 @@ public class Tienda {
         System.out.println(nombre_producto4 + ": " + cantidad_producto4);
         System.out.println(nombre_producto5 + ": " + cantidad_producto5);
         //TOTAL SIN IVA
-        System.out.println("Total sin IVA: "+ total_basico);
-        ///%IVA APLICADO
+        System.out.printf("Total sin IVA: %.2f%n", total_basico);
+        //%IVA APLICADO
         System.out.println("IVA aplicado: " + iva +"%");
         //EL IVA QUE SE APLICA AL TOTAL EN BASE AL PORCENTAJE ANTERIOR
-        System.out.println("IVA repercutido: "+ iva_repercutido + "€");
+        System.out.println("IVA repercutido: "+ String.format("%.2f",iva_repercutido) + "€");
         //TOTAL CON IVA
-        System.out.println("Total con IVA: "+total_con_iva+"€");
+        System.out.println("Total con IVA: "+ String.format("%.2f", total_con_iva) +"€");
         //DESCUENTO ALEATORIO
-        System.out.println("Descuento por 1ª vez: "+descuento+"%");
+        System.out.println("Descuento por 1ª vez: "+ descuento+"%");
         //DESCUENTO APLICADO
-        System.out.println("Valor descontado: "+valor_descontado+"€");
+        System.out.println("Valor descontado: "+ String.format("%.2f",valor_descontado)+"€");
         //PRECIO FINAL
-        System.out.println("Total final: "+total_final+"€");
+        System.out.println("Total final: "+String.format("%.2f", total_final)+"€");
         //IMPRIMIR MENSAJE DE DESPEDIDA
         System.out.println("Muchas gracias por su visita!");
     }
