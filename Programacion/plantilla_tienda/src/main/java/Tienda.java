@@ -71,8 +71,8 @@ public class Tienda {
 
         //PREGUNTAR EL NOMBRE AL CLIENTE PARA LA FACTURA
         System.out.println("Introduzca su nombre completo: ");
-        String nombre_completo_cliente = "";
-        nombre_completo_cliente = teclado.nextLine();
+        teclado.nextLine();
+        String nombre_completo_cliente = teclado.nextLine()+" ";
 
         //====================================================================
         //CALCULAR TODO LO NECESARIO DE LA FORMA QUE ESTIMEIS OPORTUNA
