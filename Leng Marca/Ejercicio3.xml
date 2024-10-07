@@ -1,0 +1,27 @@
+<Restaurante>    
+    <Menu>
+        <Categoria tipo = "Entrantes">
+            <Plato>
+                <Nombre>Ensalada</Nombre>
+                <Precio moneda = "eur">4.00</Precio>
+                <Calorias units = "cal">100</Calorias>
+            </Plato>
+        </Categoria>
+
+        <Categoria tipo = "Plato Principal">
+            <Plato>
+                <Nombre>Hamburguesa</Nombre>
+                <Precio moneda = "eur">5.50</Precio>
+                <Calorias units = "cal">200</Calorias>
+            </Plato>
+        </Categoria>
+
+        <Categoria tipo = "Postre">
+            <Plato>
+                <Nombre>Tarta 3 chocolates</Nombre>
+                <Precio moneda = "eur">3.50</Precio>
+                <Calorias units = "cal">300</Calorias>
+            </Plato>
+        </Categoria>
+    </Menu>
+</Restaurante>
