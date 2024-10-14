@@ -1,0 +1,84 @@
+<instagram>
+    <userpage userId = "1" username = "Usuario1" creationDate = "4 julio 2018" > 
+        <bio>Biografía de ejemplo</bio>
+        <followers>200</followers>
+        <followed>200</followed>
+        <posts>
+            <post id = "129">
+                <image class = "jpg">D:/media/Image1</image>
+                <image class = "jpg">D:/media/Image2</image>
+                <title>Fotos de granada</title>
+                <reacciones>
+                    <likes>100</likes>
+                    <favorites>10</favorites>
+                </reacciones>
+                
+
+                <comment userId = "2">Que buenas fotos
+                    <likes>2</likes>
+                </comment>
+                <comment userId = "3">Qué chulo!
+                    <likes>1</likes>
+                    <answers>
+                        <answer UserId = "1">Gracias</answer>
+                        <answer UserId = "17">Gracias!</answer>
+                    </answers>
+                </comment>
+                <date>1 enero 2025</date>
+            </post>
+            <post id = "130">
+                <image class = "jpg">D:/media/Image3</image>
+                <image class = "jpg">D:/media/Image4</image>
+                <image class = "jpg">D:/media/Image5</image>
+                <title>Año nuevo 2025</title>
+                <likes>50</likes>
+                <favorites>3</favorites>
+                <tag userId = "2">Usuario2</tag>
+                <comment userId = "3">feliz año
+                    <likes>1</likes>
+                </comment>
+                <date>2 enero 2025</date>
+            </post>
+        </posts>
+        <highlights>
+            <highlight id = "1">
+                <name>Viajes</name>
+                <history>
+                    <video class = "mp3">D:/media/Video1</video>
+                    <likes>3</likes>
+                    <song id = "450">Blinding Lights - TheWeeknd</song>
+                    <date>2 octubre 2023</date>
+                    <tag userId = "3">Usuario3</tag>
+                </history>
+                <history>
+                    <video class = "mp3">D:/media/Video2</video>
+                    <likes>4</likes>
+                    <date>4 abril 2024</date>
+                </history>
+            </highlight>
+            <highlight id = "2">
+                <name>Mascotas</name>
+                <history>
+                    <video class = "mp3">D:/media/Video3</video>
+                    <likes>10</likes>
+                    <song id = "294">Home - Ichika Nito</song>
+                    <date>30 mayo 2024</date>
+                </history>
+            </highlight>
+        </highlights>
+    </userpage>
+    <feedpage>
+        <yourStory>
+        </yourStory>
+        <historys userId = 34>
+            <video class = "mp3">D:/media/Video2</video>
+            <date>4 abril 2024</date>
+        </historys>
+    </feedpage>
+    <notifications>
+
+    </notifications>
+    <mds>
+
+    </mds>
+</instagram>
