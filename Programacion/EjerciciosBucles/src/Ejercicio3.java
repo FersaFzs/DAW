@@ -7,6 +7,7 @@ public class Ejercicio3 {
         cadena = scanner.nextLine();
         String cadenaInversa ="";
         for(int i = cadena.length(); i > 0; i--){
+            //hago esto para no usar StringBuilder ni .append()
             cadenaInversa += cadena.substring(i-1, i);
         }
         System.out.println(cadenaInversa);
