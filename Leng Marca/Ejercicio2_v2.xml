@@ -1,0 +1,31 @@
+<supermercado>
+    <categoria nombre = "fruta">
+        <producto>
+            <nombre>Manzana</nombre>
+            <unidades>10</unidades>
+        </producto>
+        <producto>
+            <nombre>Pera</nombre>
+            <unidades>20</unidades>
+        </producto>
+        <producto>
+            <nombre>Naranja</nombre>
+            <unidades>30</unidades>
+        </producto>
+    </categoria>
+
+    <categoria nombre = "verdura">
+        <producto>
+            <nombre>Lechuga</nombre>
+            <unidades>80</unidades>
+        </producto>
+        <producto>
+            <nombre>Tomate</nombre>
+            <unidades>15</unidades>
+        </producto>
+        <producto>
+            <nombre>Pepino</nombre>
+            <unidades>50</unidades>
+        </producto>
+    </categoria>
+</supermercado>

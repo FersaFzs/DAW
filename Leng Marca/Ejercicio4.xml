@@ -1,0 +1,32 @@
+<aplicacion>
+    <concesionarios nombre = "Coches S.L. Granada">
+        <coche>
+            <marca>BMW</marca>
+            <estado>nuevo</estado>
+            <precio moneda = "eur">100000</precio>
+        </coche>
+        <coche>
+            <marca>Nissan</marca>
+            <estado>usado</estado>
+            <precio moneda = "eur">40000</precio>
+        </coche>
+        <coche>
+            <marca>Audi</marca>
+            <estado>nuevo</estado>
+            <precio moneda = "eur">54000</precio>
+        </coche>
+    </concesionarios>
+
+    <concesionarios nombre = "RootCars and Vans S.L.">
+        <coche>
+            <marca>Megane</marca>
+            <estado>usado</estado>
+            <precio moneda = "eur">2000</precio>
+        </coche>
+        <coche>
+            <marca>Peugeot</marca>
+            <estado>nuevo</estado>
+            <precio moneda = "eur">12000</precio>
+        </coche>
+    </concesionarios>
+</aplicacion>

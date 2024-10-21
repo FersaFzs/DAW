@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <instagram>
     <userpage userId = "1" username = "Usuario1" creationDate = "4 julio 2018" > 
         <bio>Biografía de ejemplo</bio>
@@ -8,10 +9,10 @@
                 <image class = "jpg">D:/media/Image1</image>
                 <image class = "jpg">D:/media/Image2</image>
                 <title>Fotos de granada</title>
-                <reacciones>
+                <reactions>
                     <likes>100</likes>
                     <favorites>10</favorites>
-                </reacciones>
+                </reactions>
                 
 
                 <comment userId = "2">Que buenas fotos
@@ -31,8 +32,10 @@
                 <image class = "jpg">D:/media/Image4</image>
                 <image class = "jpg">D:/media/Image5</image>
                 <title>Año nuevo 2025</title>
-                <likes>50</likes>
-                <favorites>3</favorites>
+                <reactions>
+                    <likes>50</likes>
+                    <favorites>3</favorites>
+                </reactions>
                 <tag userId = "2">Usuario2</tag>
                 <comment userId = "3">feliz año
                     <likes>1</likes>
@@ -68,17 +71,110 @@
         </highlights>
     </userpage>
     <feedpage>
-        <yourStory>
-        </yourStory>
-        <historys userId = 34>
-            <video class = "mp3">D:/media/Video2</video>
-            <date>4 abril 2024</date>
+        <yourStorys>
+        </yourStorys>
+        <historys userId = "34">
+            <history>
+                <video class = "mp3">D:/media/Video35</video>
+                <date>13 octubre 2024 23:11</date>
+            </history>
+            <history>
+                <video class = "mp3">D:/media/Video45</video>
+                <song id = "468">The Color Violet - Tory Lanez</song>
+                <tag userId = "38">Usuario38</tag>
+                <date>14 octubre 2024 9:44</date>
+            </history>
         </historys>
+        <historys userId = "56">
+            <history>
+                <video class = "mp3">D:/media/Video35</video>
+                <date>14 octubre 2024 3:41</date>
+                <song id = "679">Nervous - TheNeighbourhood</song>
+            </history>
+        </historys>
+        <historys userId = "68">
+            <history>
+                <image class = "jpg">D:/media/image87</image>
+                <date>14 octubre 2024 4:25</date>
+            </history>
+            <history>
+                <image class = "jpg">D:/media/Image89</image>
+                <tag userId = "38">Usuario38</tag>
+                <date>14 octubre 2024 13:21</date>
+            </history>
+        </historys>
+        <posts>
+            <post id = "130">
+                <user>Usuario1</user>
+                <image class = "jpg">D:/media/Image24</image>
+                <image class = "jpg">D:/media/Image25</image>
+                <image class = "jpg">D:/media/Image26</image>
+                <title>Paseo por el bosque</title>
+                <reactions>
+                    <likes>50</likes>
+                </reactions>
+                <tag userId = "2">Usuario2</tag>
+                <comment userId = "3">bonitas fotos
+                    <likes>1</likes>
+                </comment>
+                <date>14 enero 2024</date>
+            </post>
+            <post id = "221">
+                <user>Usuario32</user>
+                <image class = "jpg">D:/media/Image21</image>
+                <title>Dia en familia</title>
+                <reactions>
+                    <likes>24</likes>
+                </reactions>
+                <comment userId = "42">que envidia
+                    <likes>2</likes>
+                </comment>
+                <date>14 octubre 2024</date>
+            </post>
+        </posts>
     </feedpage>
     <notifications>
-
+        <notification>
+            <action userId = "62" postId = "130" type = "like">
+                <text></text>
+            </action>
+        </notification>
+        <notification>
+            <action userId = "3" postId = "130" type = "comment">
+                <text>fotones</text>
+            </action>
+        </notification>
+        <notification>
+            <action userId = "46" type = "followed">
+                <text>followed you</text>
+            </action>
+        </notification>
+        <notification>
+            <action userId = "31" type = "message">
+                <text>hola</text>
+            </action>
+        </notification>
     </notifications>
     <mds>
-
+        <chat userId = "31">
+            <message type = "recieved">
+                <text>hola</text>
+                <date>14 octubre 2024 17:12</date>
+            </message>
+            <message type = "sent">
+                <text>holaa</text>
+                <date>14 octubre 2024 17:15</date>
+            </message>
+        </chat>
+        <chat userId = "43">
+            <message type = "sent">
+                <text>hola soy Usuario2</text>
+                <date>14 octubre 2024 10:32</date>
+            </message>
+            <message type = "recieved">
+                <text>hola, que tal</text>
+                <date>14 octubre 2024 10:44</date>
+            </message>
+        </chat>
     </mds>
 </instagram>

@@ -1,0 +1,45 @@
+
+<search>
+
+    <popular>2</popular>
+    <song id = "1">
+        <name>Hands Held High</name>
+        <author>Linking Park</author>
+        <duration>3:53</duration>
+    </song>
+    <song id = "2">
+        <name>In Pieces</name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+    <song id = "3">
+        <name>Bleed It Out - Amended Version</name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+    <song id = "4">
+        <name>Hands Held High - Amended Version</name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+    <song id = "5">
+        <name>The Little Things Give You Away</name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+    <song id = "6">
+        <name></name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+    <song id = "7">
+        <name>In Pieces</name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+    <song id = "8">
+        <name>In Pieces</name>
+        <author>Linking Park</author>
+        <duration>3:28</duration>
+    </song>
+</search>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<productos>
+    <producto id = "4543" tipo = "Auriculares inalambricos">
+        <nombre>Auriculares Inlambricos</nombre>
+        <precio divisa = "eur">49.99</precio>
+        <descripcion>Auriculares comodos con conectividad Bluetooth.</descripcion>
+        <caracteristicas>
+            <caracteristica>Cancelación de ruido</caracteristica>
+            <caracteristica>Batería de larga duracion</caracteristica>
+            <caracteristica>Controles faciles</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto id = "76565" tipo = "Libreta de viaje">
+        <nombre>Libreta de viaje</nombre>
+        <precio divisa = "eur">8.95</precio>
+        <descripcion>Libreta compacta ideal para anotar tus aventuras.</descripcion>
+        <caracteristicas>
+            <caracteristica>Tapa dura resistente</caracteristica>
+            <caracteristica>Hojas rayadas</caracteristica>
+            <caracteristica>Bolsillo interior</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto id = "65345" tipo = "Set de te de hierbas">
+        <nombre>Set de te de hierbas</nombre>
+        <precio divisa = "eur">15.50</precio>
+        <descripcion>Seleccion de infusiones de hierbas relajantes</descripcion>
+        <variedades>
+            <variedad>Manzanilla</variedad>
+            <variedad>Menta</variedad>
+            <variedad>Te de jengibre</variedad>
+        </variedades>
+    </producto>
+</productos>
+
+
+<personas>
+    <persona id = "1">
+        <nombre>Luis</nombre>
+        <apellidos>Perez Sanchez</apellidos>
+        <edad>23</edad>
+        <estadoCivil>casado</estadoCivil>
+    </persona>
+    <persona id = "2">
+        <nombre>Ana</nombre>
+        <apellidos>Ruiz Lopez</apellidos>
+        <edad>30</edad>
+        <estadoCivil>soltera</estadoCivil>
+    </persona>
+    <persona id = "3">
+        <nombre>Carmen</nombre>
+        <apellidos>Gomez Ojeda</apellidos>
+        <edad>34</edad>
+        <estadoCivil>casada</estadoCivil>
+    </persona>
+    <persona id = "4">
+        <nombre>Sergio</nombre>
+        <apellidos>oloriz Ramirez</apellidos>
+        <edad>29</edad>
+        <estadoCivil>soltero</estadoCivil>
+    </persona>
+</personas>
+
+
+<menu>
+     <comida>
+        <nombre>McFlurry</nombre>
+        <precio divisa = "eur">2.00</precio>
+        <descripcion>McFlurry de McDonalds</descripcion>
+        <calorias medida = "cal">398</calorias>
+    </comida>
+    <comida>
+        <nombre>BigMac<nombre>
+        <precio divisa = "eur">4.50</precio>
+        <descripcion>La hamburguesa más común de McDonalds</descripcion>
+        <calorias medida = "cal">490</calorias>
+    </comida>
+</menu>
