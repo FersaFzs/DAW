@@ -45,4 +45,11 @@ WHERE (ventas - objetivo) < 0;
 
 --Consulta9
 
-SELECT num_pedido, producto
+SELECT p.num_pedido, p.producto, pr.precio
+FROM pedidos pedidos
+INNER JOIN productos pr ON p.producto = pr.id_producto;
+
+--Consulta10
+
+SELECT DISTINCT YEAR(fecha_pedido) AS año_pedido
+FROM pedidos;
