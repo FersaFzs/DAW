@@ -1,9 +1,11 @@
-<!DOCTYPE html> 
-<html lang ="es">
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Mi primera web</title>
 </head>
+
 <body>
     <h2>Indice</h2>
     <pre>
@@ -43,9 +45,9 @@
     <hr>
     <h4>Fórmulas matemáticas</h4>
     <p>Teorema de pitágoras: <br>
-    h<sup>2</sup> = c<sub>1</sub><sup>2</sup> + c<sub>2</sub><sup>2</sup>
-    <br>
-    </p> 
+        h<sup>2</sup> = c<sub>1</sub><sup>2</sup> + c<sub>2</sub><sup>2</sup>
+        <br>
+    </p>
     <hr>
     ruta1: ./index.html
     ruta2: ./carlSagan.html
@@ -54,8 +56,8 @@
     ruta5: ./css/lib/boostrap.css
     ruta6: ../index.html
     ruta7: ./css/styles.css
-    ruta8: ../../index.html 
-    ruta9: ../../img/logo.webp 
+    ruta8: ../../index.html
+    ruta9: ../../img/logo.webp
 
     <p>
         Visita <a href="https://es.wikipedia.org/wiki/Venus_(planeta)" target="_self">Venus</a> en la misma pestaña
@@ -85,8 +87,8 @@
             Trapecio:
         </dt>
         <dd>
-            El músculo trapecio es un músculo 
-            situado en la región posterior del 
+            El músculo trapecio es un músculo
+            situado en la región posterior del
             cuello y del tronco
         </dd>
     </dl>
@@ -104,9 +106,97 @@
             <li>Águila</li>
         </ul>
     </ul>
-
+    <b>Negrita</b>
+    <i>cursiva</i>
+    <br>
+    <!--Esto es un comentario en HTML-->
     <img src="./imagenes_sistema_solar/imagenes/pluton.jpg" width="500" alt="Imagen del planeta plutón">
     <h4>Video</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6lLAvOSh8Mc?si=5CC-IhbvSMTdutAb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6lLAvOSh8Mc?si=5CC-IhbvSMTdutAb"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h4>Audio</h4>
+    <audio controls muted style="width: 250px;">
+        <source src="./audio/The Weeknd - Sao Paulo Live from iHeart Music Festival 2024.mp3" type="audio/mp3">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+    <div>
+        <h2>Urano</h2>
+        <img src="./imagenes_sistema_solar/imagenes/urano.jpg" width="500"></p>
+        <p>Planeta gaseoso gigante en los confines de nuestro sistema solar.</p>
+    </div>
+    <p>
+        <span style="background-color: lightgreen;">Este es un texto resaltado</span>en la misma linea que el resto del
+        contenido.
+    </p>
+    <div style="background-color: violet;">
+        <h2>mi div</h2>
+        <p>Esto es un párrafo dentro de un div</p>
+        <p>Aquí hay un <span style="font-weight: bold;">texto en negrirta</span> en la misma linea que el resto del
+            contenido</p>
+    </div>
+    <!--atajos de completar-->
+    <!--ol>li*11-->
+    <!--se pone lo q quieres dentro de lo que quieres y multiplicas por la cantidad de veces que lo quieres-->
+    <!--En este caso pone que pongas un ol que tenga dentro un li multiplicado por 11 (11 li)-->
+    <ol>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Tipo</th>
+                <th>Tamaño</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Marte</td>
+                <td>Rocoso</td>
+                <td style="text-align: center;">0.15</td>
+            </tr>
+            <tr>
+                <td>Júpiter</td>
+                <td>Gaseoso</td>
+                <td style="text-align: center;">34</td>
+            </tr>
+            <tr>
+                <td>Urano</td>
+                <td>Gaseoso</td>
+                <td style="text-align: center;">17</td>
+            </tr>
+            <tr>
+                <td>Plutón</td>
+                <td>Rocoso</td>
+                <td style="text-align: center;">0.05</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Masa media</td>
+                <td style="text-align: center;">12.8</td>
+                <!--Cuando es un valor económico en número generalmente se pega a la derecha con text-align: right -->
+            </tr>
+        </tfoot>
+    </table>
+    <footer style="text-align: center; padding: 10px; background-color: aquamarine; position: fixed; bottom: 0; width: 100%;">
+        <h5>Autor: José María Fernández Saavedra</h5>
+    </footer>
+
+
 </body>
+
 </html>
