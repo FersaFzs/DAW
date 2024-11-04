@@ -192,11 +192,111 @@
             </tr>
         </tfoot>
     </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    
     <footer style="text-align: center; padding: 10px; background-color: aquamarine; position: fixed; bottom: 0; width: 100%;">
         <h5>Autor: José María Fernández Saavedra</h5>
     </footer>
 
+    <h1>Formulario:</h1>
 
+    <!--Formulario ejercicio1-->
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre"  pattern="[A-Za-zÁÉÍÓÚáéíóúÑñ ]+" required>
+        <br>
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" required>
+        <br>
+
+        <fieldset >
+            <legend>Género</legend>
+            <input id="generoH" name="genero" type="radio">
+            <label for="generoH">Hombre</label>
+            <br>
+            <input id="generoM" name="genero" type="radio">
+            <label for="generoM">Mujer</label>
+            <br>
+        </fieldset>
+        <br>
+        <label for="fechaNacim">Fecha de nacimiento</label>
+        <input id="fechaNacim" name="fechaNacim" type="date" required>
+        <br>
+        <label for="numHijos">Número de hijos:</label>
+        <input id="numHijos" name="numHijos" type="number" value="0" min="0" max="69" step="1">
+        <br>
+        <label for="avatar">Subir avatar:</label>
+        <input id="avatar" name="avatar" type="submit" value="Seleccionar archivo"">
+        <br>
+        <label for="provincia">Selecciona tu provincia</label>
+        <select name="provincia" id="provincia">
+            <option value="Granada">Granada</option>
+            <option value="Jaen">Jaen</option>
+            <option value="Almeria">Almeria</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Selecciona área de interés</legend>
+            <input id="area1" name="area" type="checkbox">
+            <label for="area1">Informática</label>
+            <input id="area2" name="area" type="checkbox">
+            <label for="area2">Criptomonedas</label>
+            <input id="area3" name="area" type="checkbox">
+            <label for="area3">Ciclismo</label>
+            <br>
+            <input id="area4" name="area" type="checkbox">
+            <label for="area4">Escalada</label>
+            <input id="area5" name="area" type="checkbox">
+            <label for="area5">League of Legends</label>
+            <input id="area6" name="area" type="checkbox">
+            <label for="area6">Lectura</label>
+        </fieldset>
+        <br>
+        <label for="lenguaje">Selecciona el lenguaje que quieres aprender</label>
+        <input list="lenguaje" required>
+        <datalist id="lenguaje">
+            <option value="Python">Python</option>
+            <option value="Perl">Perl</option>
+        </datalist>
+        <br>
+        <label for="texto">Cuéntanos algo sobre tu vida: (opcional)</label>
+        <br>
+        <textarea id="texto" name="texto" rows="10" cols="50" maxlength="300"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <br>
+    <hr>
+    <br>
+    <!--Ejercicio2 validacion-->
+    <h2>Formulario ejercicio 2 validacion</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input id="nombre" name="nombre" type="text" maxlength="30" minlength="3" required>
+        <br>
+        <label for="edad">Edad:</label>
+        <input id="edad" name="edad" type="number" min="18" step="1" required>
+        <br>
+        <label for="rango">Grado de satisfacción</label>
+        <input id="rango" name="rango" type="range" max="5" min="0">
+        <br>
+        <label for="telefono">Teléfono:</label>
+        <input id="telefono" name="telefono" type="tel" pattern="[6-7]{1}[0-9]{8}" >
+        <br>
+        <label for="terminos">Acepto los términos y condiciones</label>
+        <input id="terminos" name="terminos" type="checkbox" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>    
+    <br><br><br><br><br><br>
 </body>
 
 </html>
