@@ -13,7 +13,7 @@ public class Persona {
         nombre = n1;
         this.edad = edad; // con this.x hacemos referencia al atributo de la clase aunque tenga el mismo nombre que el de la función
         this.sexo = sexo;
-
+s
     }
 
     public String getNombre() {

@@ -46,7 +46,7 @@ WHERE (ventas - objetivo) < 0;
 --Consulta9
 
 SELECT p.num_pedido, p.producto, pr.precio
-FROM pedidos pedidos
+FROM pedidos p
 INNER JOIN productos pr ON p.producto = pr.id_producto;
 
 --Consulta10

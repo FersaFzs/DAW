@@ -9,11 +9,11 @@ public class factura {
         System.out.println("Has creado una factura");
     }
     public void saludo(){
-        System.out.println("Sr/Sra" + c1.nombreCorto()+" aquí tiene el resumen de la factura: ");
+        System.out.println("Sr/Sra" + c1.nombreCorto() + " aquí tiene el resumen de la factura: ");
     }
     public void muestraFactura(){
-        System.out.println(c1.getNombre_cliente());
-        System.out.println();
+        saludo();
+        System.out.println("Nombre cliente: "+c1.getNombre_cliente().toUpperCase());
     }
 
 }
