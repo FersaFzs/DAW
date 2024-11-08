@@ -5,16 +5,13 @@ import com.datastax.oss.driver.api.core.cql.Row;
 
 public class PruebaCassandraDBMaven{
     public static void main(String[] args) {
-        try (CqlSession session = CqlSession.builder().build()) {
-            System.out.println("Conectado a Cassandra");
+        try (CqlSession session = CqlSession.builder().withKeyspace("ejemplo").build()) {
+            System.out.println("Conectado a Cassandra en el Keyspace 'ejemplo'");
 
             // Crear un Keyspace
             session.execute("CREATE KEYSPACE IF NOT EXISTS ejemplo "
                     + "WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 }");
             System.out.println("Keyspace creado");
-
-            // Usar el Keyspace
-            session.execute("USE ejemplo");
 
             // Crear una tabla
             String createTableQuery = "CREATE TABLE IF NOT EXISTS usuarios ("
@@ -23,6 +20,10 @@ public class PruebaCassandraDBMaven{
                     + "edad INT)";
             session.execute(createTableQuery);
             System.out.println("Tabla 'usuarios' creada");
+
+            // Eliminar datos (para no inflar la tabla cada vez que ejecute)
+            session.execute("TRUNCATE TABLE usuarios");
+            System.out.println("Datos eliminados de la tabla 'usuarios'");
 
             // Insertar datos
             String insertQuery = "INSERT INTO usuarios (id, nombre, edad) VALUES (uuid(), 'Paco', 23)";
