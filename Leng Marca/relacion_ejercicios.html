@@ -214,7 +214,106 @@
     <br>
      
     <!--Ejercicio10-->
-    <table>
-
+    <table border="1" cellpadding="10" style="border-color: white; border-collapse:collapse;width: 100%;">
+        <thead style="background-color: lightskyblue; color: blue; text-align: center; ;">
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado TH</th>
+        </thead>
+        <tbody style="background-color: orange;">            <tr>
+                <td>Dato 1 fila 1</td>
+                <td>Dato 2 fila 1</td>
+                <td>Elemento TD</td>
+            </tr>
+            <tr>
+                <td>Dato 3 fila 2</td>
+                <td>Dato 4 fila 2</td>
+                <td>Elemento TD</td>
+            </tr>
+            <tr>
+                <td>Dato 5 fila 3</td>
+                <td>Dato 6 fila 3</td>
+                <td>Elemento TD</td>
+            </tr>
+        </tbody>
+        <tfoot style="background-color: lime; color: blue;">
+            <th>Pie 1</th>
+            <th>Pie 2</th>
+            <th>Elemento TH</th>
+        </tfoot>
     </table>
+
+    <div style="border-color: black; border-width: 10px; border-style:solid;">
+        <form style="margin-left: 10px; margin-bottom: 10px;">
+            <h3>Rellena tu CV</h3>
+            <label for="nombre">Nombre:</label><br>
+            <input id="nombre" name="nombre" type="text" maxlength="30" minlength="3" required>
+            <br>
+            <label for="apellidos">Apellidos:</label><br>
+            <input id="apellidos" name="apellidos" type="text" maxlength="60" minlength="1" required>
+            <br>
+            <label for="contraseña">Contraseña:</label><br>
+            <input id="password" name="password" type="password" maxlength="30" minlength="8" required>
+            <br>
+            <label for="DNI">DNI</label><br>
+            <input id="DNI" name="DNI" type="text" maxlength="12" minlength="8" pattern="[0-9]{8}[A-Z]" required>
+            <fieldset id="sexo" name="sexo" style="border-style: hidden;">
+                <legend>Sexo</legend>
+                <input id="hombre" name="hombre" type="radio">
+                <label for="hombre">Hombre</label><br>
+                <input id="mujer" name="mujer" type="radio">
+                <label for="mujer">Mujer</label><br> 
+            </fieldset>
+            <br>
+            <label for="foto">Incluir mi foto</label>
+            <input id="foto" name="foto" type="text">
+            <button type="submit">Elegir...</button>
+            <br>
+            <input type="checkbox" id="suscribirse" name="suscribirse">
+            <label for="suscribirse">Suscribirse al boletín de novedades</label>
+            <br>
+            <br>
+            <button type="submit">Guardar cambios</button>
+            <button type="reset">Borrar los datos introducidos</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div style="border-color: black; border-width: 10px; border-style:solid;">
+        <form style="margin-left: 10px; margin-bottom: 10px;">
+            <h4>Información sobre el producto</h4>
+            <br>
+            <label for="nombre">Nombre</label><br>
+            <input id="nombre" name="nombre" type="text" maxlength="30" minlength="3" size="100%" required>
+            <br>
+            <label for="descripcion">Descripción</label><br>
+            <textarea id="apellidos" name="apellidos" type="text" maxlength="600" cols="50" rows="7" required></textarea>
+            <br>
+            <label for="contraseña">Contraseña:</label><br>
+            <input id="password" name="password" type="password" maxlength="30" minlength="8" required>
+            <br>
+            <label for="DNI">DNI</label><br>
+            <input id="DNI" name="DNI" type="text" maxlength="12" minlength="8" pattern="[0-9]{8}[A-Z]" required>
+            <fieldset id="sexo" name="sexo" style="border-style: hidden;">
+                <legend>Sexo</legend>
+                <input id="hombre" name="hombre" type="radio">
+                <label for="hombre">Hombre</label><br>
+                <input id="mujer" name="mujer" type="radio">
+                <label for="mujer">Mujer</label><br> 
+            </fieldset>
+            <br>
+            <label for="foto">Incluir mi foto</label>
+            <input id="foto" name="foto" type="text">
+            <button type="submit">Elegir...</button>
+            <br>
+            <input type="checkbox" id="suscribirse" name="suscribirse">
+            <label for="suscribirse">Suscribirse al boletín de novedades</label>
+            <br>
+            <br>
+            <button type="submit">Guardar cambios</button>
+            <button type="reset">Borrar los datos introducidos</button>
+        </form>
+    </div>
+
 </body>
