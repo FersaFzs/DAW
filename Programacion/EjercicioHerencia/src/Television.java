@@ -2,7 +2,7 @@ public class Television extends Electrodomestico{
     private int resolucion;
     private boolean netflix = false;
 
-    public Television(String color, String consumo, double precio, int peso, int resolucion, boolean netflix){
+    public Television(Color color, String consumo, double precio, int peso, int resolucion, boolean netflix){
         super(precio, color, consumo, peso);
         this.resolucion = resolucion;
         this.netflix = netflix;
@@ -22,10 +22,9 @@ public class Television extends Electrodomestico{
 
     @Override
     public String toString(){
-        super.toString();
-        System.out.println("Resolucion: "+this.resolucion);
-        System.out.println("Netflix: "+this.netflix);
-    return null;
+        return super.toString() + "\n" +
+                "Resolución: " + this.resolucion + " pulgadas\n" +
+                "Netflix: " + (this.netflix ? "Sí" : "No");
     }
 
     @Override
@@ -39,6 +38,4 @@ public class Television extends Electrodomestico{
         }
         return precioFinal;
     }
-
-
 }

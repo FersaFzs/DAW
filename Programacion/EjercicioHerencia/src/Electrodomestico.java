@@ -1,10 +1,10 @@
 public class Electrodomestico {
     protected double precioBase = 100;
-    protected String color = "blanco";
+    protected Color color = Color.BLANCO;
     protected String consumo = "A";
     protected int peso = 10;
 
-    public Electrodomestico(double precio, String color, String consumo, int peso){
+    public Electrodomestico(double precio, Color color, String consumo, int peso){
         this.precioBase = precio;
         this.color = color;
         this.consumo = consumo;
@@ -21,11 +21,11 @@ public class Electrodomestico {
         this.precioBase = precioBase;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
@@ -57,12 +57,13 @@ public class Electrodomestico {
             default -> "A";
         };
     }
+
     @Override
     public String toString(){
-        System.out.println("Preio base: "+ this.precioBase);
-        System.out.println("Consumo energético: "+ this.consumo);
-        System.out.println("Peso: "+ this.peso + "kg");
-        return null;
+        return "Precio base: " + this.precioBase + "\n" +
+                "Consumo energético: " + this.consumo + "\n" +
+                "Peso: " + this.peso + " kg\n" +
+                "Color: " + this.color;
     }
 
     public double precioFinal(){
@@ -79,13 +80,13 @@ public class Electrodomestico {
         };
 
         if(peso >= 0 && peso < 20){
-            precioFinal+=10;
+            precioFinal += 10;
         }else if(peso >= 20 && peso < 50){
-            precioFinal+=30;
+            precioFinal += 30;
         }else if(peso >= 50 && peso < 80){
-            precioFinal+=50;
+            precioFinal += 50;
         }else{
-            precioFinal+=100;
+            precioFinal += 100;
         }
         return precioFinal;
     }
