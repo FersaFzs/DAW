@@ -3,16 +3,13 @@ public class Tienda {
     private double precio;
     private double iva;
     private double descuento;
-
-    private static int numeroProductos = 0; //static porque queremos que el numero de productos sea de tienda en general, no de cada objeto tienda que creemos
-    private static double descuentoGlobal = 0; //static porque queremos que se pueda aplicar a todos los productos
+    private double descuentoGlobal = 0;
 
     public Tienda(String producto, double precio, double iva, double descuento) {
         this.producto = producto;
         this.precio = precio;
         this.iva = iva;
         this.descuento = descuento;
-        numeroProductos++;
     }
 
     public Tienda(String producto) {

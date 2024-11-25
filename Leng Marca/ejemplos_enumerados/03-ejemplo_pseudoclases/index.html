@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejemplo de Pseudoclases CSS</title>
+        <style>
+            /* Estilo por defecto para los enlaces */
+            a {
+                color: blue;
+                text-decoration: none;
+            }
+
+            /* Estilo cuando el cursor está sobre el enlace */
+            a:hover {
+                border: 3px solid red;
+            }
+
+            /* Estilo para los enlaces visitados */
+            a:visited {
+                color: olive;
+            }
+
+            /* Estilo cuando el enlace es activado (haciendo clic) */
+            a:active {
+                color: red;
+            }
+
+            /* Estilo para los elementos de tipo checkbox cuando están marcados */
+            input[type="checkbox"]:checked+label {
+                background-color: gray;
+                border: 2px dashed pink;
+            }
+
+            /* Estilo para los elementos de tipo input cuando están enfocados */
+            input:focus {
+                border: 2px solid blue;
+            }
+
+            /* Estilo para los elementos de tipo input que son inválidos según su validación */
+            input:invalid {
+                border: 2px solid red;
+            }
+
+            /* Estilo para los elementos de tipo input que son válidos según su validación */
+            input:valid {
+                border: 2px solid green;
+            }
+
+            .foto{
+                width: 20%;
+            }
+
+            /*.galeria:has(> :hover) .foto:not(:hover){
+                opacity: 0.5;
+            }*/
+
+        </style>
+    </head>
+
+    <body>
+        <p><a href="#">Enlace Normal</a></p>
+        <p><a href="#" target="_blank">Enlace con Pseudoclases</a></p>
+        <input type="checkbox">
+        <label>Checkbox Marcado</label>
+        <br>
+        <label>Input de Texto: <input type="text" required></label>
+        <div class="galeria">
+            <img src="mario.jpg" alt="" class="foto">
+            <img src="mario.jpg" alt="" class="foto">
+            <img src="mario.jpg" alt="" class="foto">
+            <img src="mario.jpg" alt="" class="foto">
+            <img src="mario.jpg" alt="" class="foto">
+            <img src="mario.jpg" alt="" class="foto">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Pseudoelementos CSS</title>
+    <style>
+        /* Estilizar texto seleccionado */
+        ::selection {
+            background-color: #ffcc00;
+            color: #333;
+        }
+
+        /* Estilizar el marcador de una lista */
+        li::marker {
+            content: "\2022";
+            /* Código Unicode para un punto */
+            color: #ff0000;
+            font-size: 1.2rem;
+        }
+
+        /* Agregar contenido antes del elemento h1 */
+        h1::before {
+            content: "🚀 ";
+            font-size: 1.5rem;
+        }
+
+        /* Agregar contenido después de los elementos de clase .post */
+        .post::after {
+            content: " [Leer más]";
+            color: #007bff;
+        }
+
+        /* Estilizar la primera letra de un párrafo */
+        p::first-letter {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff6600;
+        }
+
+        /* Estilizar la primera línea de un párrafo */
+        p::first-line {
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+
+        button::before {
+            content: "💖 ";
+            margin-right: 0.5em;
+            /* Espacio entre el icono y el texto del botón */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="box">Artículos Interesantes</h1>
+    <button>Click para contenido de interes</button>
+    <ul>
+        <li>HTML y CSS para Principiantes</li>
+        <li>JavaScript Moderno: ES6+</li>
+        <li>Desarrollo Web Responsivo con CSS Grid y Flexbox</li>
+    </ul>
+
+    <div class="post">
+        <h2>Título del Artículo</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum quam et nunc suscipit vestibulum.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de como usar fuentes que no tenga el navegador</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
+
+	<link href="https://fonts.googleapis.com/css2?family=Fascinate&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+		#fuente1{
+			font-family: 'Pacifico', cursive;
+			font-size:2rem;
+		}
+
+		@font-face {
+  			font-family: "DaniFont";
+  			src: url("./assets/fonts/ALGER.TTF");
+		}
+
+		#fuente2{
+			font-family: 'DaniFont';
+			font-size:2rem;
+		}
+
+		#fuente3{
+			font-family: 'Fascinate', cursive;
+			font-size: 2rem;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ejemplo de como usar fuentes que no tenga el navegador</h1>
+	<p id="fuente1">Hola, soy una fuente realmente pomposa de Google Fonts</p>
+	<p id="fuente2">Hola, soy una fuente que está guardada en una carpeta <assets>
+	<fonts></fonts></p>
+	<p id="fuente3">Hola, soy la fuente que acabo de agregar desde Google Fonts</p>
+</body>
+</html>

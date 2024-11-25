@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de CSS</title>
+
+    <style>
+        img/* Ejercicio 0: selecciona todas la imagenes */
+        {
+            width: 150px;
+        }
+
+        .contenedor a/* Ejercicio 1: Selecciona todos los enlaces dentro de elemento con clase "contenedor" */
+        {
+            color: green;
+            /* Texto verde para enlaces dentro de párrafos con clase "contenedor" */
+            text-decoration: overline;
+            /* Subrayado para enlaces dentro de párrafos con clase "contenedor" */
+        }
+
+        #principal>p/* Ejercicio 2: Selecciona los párrafos que son hijos directos de un elemento con id "principal" */
+        {
+            font-size: 32px;
+            /* Tamaño de fuente 18px para párrafos hijos directos de #principal */
+        }
+
+        div.contenedor ul.lista/* Ejercicio 3: Selecciona los elementos de lista desordenada con clase "lista" que están dentro de un div con clase "contenedor" */
+        {
+            background-color: #5e3b3b;
+            /* Fondo gris para listas dentro de divs con clase "contenedor" */
+            padding: 10px;
+            /* Relleno de 10px para listas dentro de divs con clase "contenedor" */
+        }
+
+        *>img:first-child/* Ejercicio 4: Selecciona las imágenes que son el primer hijo de su contenedor */
+        {
+            border: 3px solid red;
+            /* Borde rojo para la primera imagen dentro de su contenedor */
+        }
+
+        a[target]/* Ejercicio 5: Selecciona los elementos de tipo enlace a con atributo target */
+        {
+            text-decoration: overline;
+            background-color: chocolate;
+        }
+        
+        a[href='https://sitio1.com']/* Ejercicio 6: Selecciona los elementos de tipo enlace a con que vayan a la direccion  https://sitio1.com */
+        {
+            text-decoration: none;
+            border: 3px solid purple;
+        }
+
+        h2+h3/* Ejercicio 7: Selecciona los h3 hermanos adyacentes a un encabezado h2 */
+        {
+            font-style: italic;
+            /* Estilo de fuente en cursiva para párrafos adyacentes a h2 */
+        }
+
+        button.accion/* Ejercicio 8: Selecciona los elementos de tipo botón con clase "accion" */
+        {
+            background-color: #ffcc00;
+            /* Fondo amarillo para botones con clase "accion" */
+            color: #333;
+            /* Texto oscuro para botones con clase "accion" */
+        }
+
+        *[type='password']:invalid/* Ejercicio 9: Selecciona los elementos de tipo password que son invalidos*/
+         {
+            background-color: cyan;
+            /* Fondo amarillo para checkboxes marcados */
+        }
+
+        input::placeholder/* Ejercicio 10: Selecciona los elementos de tipo input que contienen el atributo "placeholder" */
+        {
+            font-style: italic;
+            /* Texto en cursiva para inputs con atributo "placeholder" */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="principal">
+        <p>Este es otro párrafo dentro de #principal.</p>
+        <div class="contenedor">
+            <p>
+                <a href="#">Este parrafo contiene un enlace</a>
+            </p>
+        </div>
+    </div>
+
+    <div class="contenedor">
+        <ul class="lista">
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+    </div>
+    <div>
+        <img src="imagenes/pattern.jpg" alt="Imagen 1">
+        <img src="imagenes/pattern2.jpg" alt="Imagen 2">
+        <img src="imagenes/pattern3.jpg" alt="Imagen 3">
+    </div>
+
+    <h2>Encabezado H2</h2>
+    <h3>h3 adyacente a H2</h3>
+
+    <a href="https://sitio1.com">Enlace con enlace a sition1.com</a>
+    <a href="#" target="_blank">Enlace con target</a><br><br>
+
+    <button class="accion">Realizar Acción</button>
+
+    <input type="text" placeholder="Campo con placeholder">
+    <br><br>
+    <input type="password" required value="123456"> Inpur password correcto<br>
+    <input type="password" required>Input password invalido
+
+    <div>
+        <img src="imagenes/pattern3.jpg" alt="Imagen 3">
+        <img src="imagenes/pattern3.jpg" alt="Imagen 3">
+    </div>
+</body>
+
+</html>

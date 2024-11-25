@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Border Radius y Box Shadow</title>
+    <style>
+        .caja-con-bordes-redondeados {
+            width: 200px;
+            height: 20vh;
+            text-align: center;
+            line-height:20vh;
+            background-color: #3498db;
+            border-radius: 20px; /* Bordes redondeados con radio de 20px */
+            margin: 20px;
+        }
+
+        .caja-con-sombra {
+            width: 200px;
+            height: 200px;
+            background-color: #e74c3c;
+            box-shadow: 5px 5px 10px rgba(255,0, 0, 0.5); /* Sombra con posición, desenfoque y color */
+            margin: 20px;
+        }
+        /* Estilo para convertir la etiqueta <a> en un botón */
+            a.boton-chulo {
+            display: inline-block;
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            text-decoration: none;
+            border: 3px solid #3498db;
+            /* Borde sólido más grueso */
+            border-radius: 10px;
+            /* Bordes redondeados más pronunciados */
+            background-color: #3498db;
+            color: #ffffff;
+            font-weight: bold;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+            /* Sombra más pronunciada */
+            transition: background-color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+            /* Añadido transition para bordes y sombras */
+        }
+
+        /* Estilo hover para resaltar cuando el mouse está sobre el botón */
+        a.boton-chulo:hover {
+            background-color: #2980b9;
+            border: 3px solid #2980b9;
+            box-shadow: 5px 5px 12px green;
+            /* Sombra más pronunciada en hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="caja-con-bordes-redondeados">Bordes Redondeados</div>
+    <div class="caja-con-sombra">Sombra</div>
+    <a href="#" class="boton-chulo">Pulsar para ganar dinero</a>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de Estilos CSS</title>
+
+  <style>
+    /* Estilos para la etiqueta p */
+    p {
+      color: red;/* Color de texto rojo */
+      background-color: yellow;/* Fondo amarillo */
+      border-color: black; border: 1px;/* Borde negro de 1 píxel */
+      font-family: Arial, Helvetica, sans-serif;/* Tipo de fuente Arial o sans-serif si Arial no está disponible */
+      font-size: 16px;/* Tamaño de fuente 16 píxeles */
+      font-style: italic;/* Texto en cursiva */
+      font-weight: bold;/* Texto en negrita */
+      text-align: center;/* Alineación centrada */
+    }
+
+    /* Estilos para la etiqueta div */
+    div {
+      text-decoration: underline; /* Subrayado del texto */
+      text-transform: uppercase;/* Texto en mayúsculas */
+      font-size: 1.5em;/* Altura de línea 1.5 veces el tamaño de fuente */
+      letter-spacing: 1px;/* Espaciado entre letras de 1 píxel */
+      opacity: 80%;/* Opacidad del 80% */
+      width: 300px;/* Ancho de 300 píxeles */
+      height: 100px;/* Altura de 100 píxeles */
+    }
+
+    /* Estilos para la etiqueta ul con la clase "lista" */
+    ul.lista {
+      list-style-type:square;/* Tipo de viñeta cuadrada */
+      list-style-image:url('./imagenes/reducido.jpg');/* Imagen personalizada como viñeta usando el archivo reducido.jpg*/
+    }
+
+    /* Estilos para el cuerpo (body) */
+    body {
+      background-image: url(./imagenes/mario.jpg);/* Imagen de fondo mario.jpg*/
+      background-size: contain;/* Ajusta el tamaño para que la imagen se contenga en el contenedor */
+      background-repeat: no-repeat;/* No repetir la imagen de fondo */
+      background-position: center;/* Posición centrada */
+      background-attachment: fixed;/* Fondo fijo al desplazarse */
+    }
+
+    /* Estilos para la clase "caja" */
+    .caja {
+      padding-top: 10px; padding-bottom: 10px; padding-left: 20px; padding-right: 20px;/*Relleno de 10px arriba y abajo y de 20px a la izquierda y derecha*/
+      border-radius: 10px;/* Borde redondeado con radio de 10 píxeles */
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);/* Sombra con desplazamiento de 3px en x, 3px en y, y difuminado de 5px */
+      box-sizing: border-box;/* La caja incluye el borde y el relleno en el tamaño total */
+    }
+
+    /* Estilos para la clase "destacado" */
+    .destacado {
+      color: blue;/* Color de texto azul */
+      background-color: green;/* Fondo verde */
+      border-style: dotted; border: 2px;/* Borde punteado rojo de 2 píxeles */
+      font-family: Verdana, sans-serif;/* Tipo de fuente Verdana o sans-serif si Verdana no está disponible */
+      font-size: 18px;/* Tamaño de fuente 18 píxeles */
+    }
+
+    /* Estilos para la clase "letras" */
+    .letras {
+      font-weight: bolder;/* Texto más negrita que el valor predeterminado */
+      text-align: center;/* Alineación centrada */
+      text-decoration: line-through;/* Texto tachado */
+      text-transform: capitalize;/* Primeras letras en mayúscula */
+      font-size: 1.2em;/* Altura de línea 1.2 veces el tamaño de fuente */
+      letter-spacing: 2px;/* Espaciado entre letras de 2 píxeles */
+    }
+
+    /* Estilos para la etiqueta img */
+    img {
+      opacity: 23%;/* Opacidad del 23% */
+      width: 30%;/* Ancho del 30% del ancho de la ventana */
+      height: 50%;/* Altura del 50% de la altura de la ventana */
+    }
+
+    /* Estilos para la clase "caja_fondo" */
+    .caja_fondo {
+      background-image: url(./imagenes/pattern.jpg);/* Otra imagen de fondo */
+      background-size: cover;/* Ajusta la imagen de fondo para que cubra completamente el contenedor */
+      padding: 20px;/* Relleno de 20px por cada lado*/
+      border-style: dotted; border-color: cyan; border: 3px;/* Borde punteado cyan de 3 píxeles */
+      border-radius: 5px;/* Borde redondeado con radio de 5 píxeles */
+      box-shadow: 2px 2px 30px #dd3131;/* Sombra con desplazamiento de 2px en x, 2px en y, y difuminado de 30px color hex dd3131*/
+      box-sizing: border-box;/* El tamaño de la caja incluye el contenido, el borde y el relleno */
+      width: 50%;/* Ancho del 50% del contenedor padre */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="caja">
+    <p>Este es un párrafo dentro de una caja.</p>
+  </div>
+
+  <p class="destacado letras">Este párrafo está destacado con letras especiales.</p>
+
+  <!-- Lista con la clase "lista" -->
+  <ul class="lista">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+  <!-- Lista sin clase -->
+  <ul>
+    <li>Sin clase 1</li>
+    <li>Sin clase 2</li>
+    <li>Sin clase 3</li>
+  </ul>
+
+  <img src="imagenes/pattern2.jpg" alt="Imagen de ejemplo">
+
+  <div class="caja_fondo">
+    <p>Este es otro párrafo en una caja con fondo diferente.</p>
+  </div>
+
+</body>
+</html>
