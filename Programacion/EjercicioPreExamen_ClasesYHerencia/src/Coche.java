@@ -1,6 +1,7 @@
 import java.util.Scanner;
 public class Coche extends Vehiculo{
     private final int numPuertas;
+
     public Coche(String marca, String modelo, int numPuertas){
         super(marca, modelo);
         this.numPuertas = numPuertas;
@@ -37,5 +38,4 @@ public class Coche extends Vehiculo{
         scanner.close();
         return new Coche(marca, modelo, numPuertas);
     }
-
 }
