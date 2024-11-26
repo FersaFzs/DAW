@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efectos de Display</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+            margin: auto;
+            color: white;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+
+        .bloque {
+            display: block;
+            background-color: #3498db;
+        }
+
+        .linea {
+            display: inline;
+            background-color: #2ecc71;
+        }
+
+        .linea-bloque {
+            display: inline-block;
+            background-color: #e74c3c;
+        }
+
+        .nada {
+            color:black;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nada">None</div>
+    <div class="linea-bloque">Inline-Block</div>
+    <div class="bloque">Block</div>
+    <div class="linea">Inline</div>
+</body>
+</html>

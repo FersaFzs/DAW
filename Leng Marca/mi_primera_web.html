@@ -112,10 +112,7 @@
     <!--Esto es un comentario en HTML-->
     <img src="./imagenes_sistema_solar/imagenes/pluton.jpg" width="500" alt="Imagen del planeta plutón">
     <h4>Video</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/6lLAvOSh8Mc?si=5CC-IhbvSMTdutAb"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/sfhWbLmvJFE?si=tx6H2HZaHB8khtvp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <h4>Audio</h4>
     <audio controls muted style="width: 250px;">
         <source src="./audio/The Weeknd - Sao Paulo Live from iHeart Music Festival 2024.mp3" type="audio/mp3">
@@ -221,7 +218,7 @@
             <input id="generoH" name="genero" type="radio">
             <label for="generoH">Hombre</label>
             <br>
-            <input id="generoM" name="genero" type="radio">
+            <input id="generoM" name="genero" type="radio" required>
             <label for="generoM">Mujer</label>
             <br>
         </fieldset>
@@ -296,6 +293,42 @@
         <br>
         <button type="submit">Enviar</button>
     </form>    
-    <br><br><br><br><br><br>
+    <br>
+    <hr>
+    <br>
+    <!--Ejercicio3 en el 1-->
+    
+
+    <!--Ejercicio4 formulario de contacto-->
+    <fieldset>
+        <legend><h3>Formulario de contacto extraterrestre:</h3></legend>
+        <form>
+            <label for="nombre">Nombre:</label><br>
+            <input id="nombre" name="nombre" type="text" maxlength="50" minlength="1" required>
+            <br>
+            <label for="email">Email:</label><br>
+            <input id="email" name="email" type="email" required>
+            <br>
+            <label for="planeta">Planeta desde el que contactas:</label><br>
+            <input id="planeta" name="planeta" type="text" maxlength="50" minlength="1" required>
+            <br>
+            <label for="asunto">Asunto por el que contactas:</label><br>
+            <textarea id="asunto" name="asunto" type="text" rows="10" cols="50" maxlength="300"></textarea>
+            <br>
+            <label for="pfp">Sube una foto tuya:</label><br>
+            <input id="pfp" name="pfp" type="submit" value="Seleccionar archivo">
+            <br>
+            <label for="aceptar"><b>Acepto que los alienígenas vengan a por mi:</b></label><br>
+            <input id="aceptar" name="aceptar" type="checkbox" required>
+            <br>     
+            <button style="background-color: lightskyblue;"="submit"><b>Enviar</b></button>
+            <br>
+            <br>
+            <button style="background-color: red; border-style:dashed; color: white;" type="reset"><b>Reset</b></button><br>
+            <br>  
+            <br>
+        </form>
+    </fieldset>
+    <br><br><br><br><br>
 </body>
 </html>

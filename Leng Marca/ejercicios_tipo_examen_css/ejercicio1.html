@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de CSS</title>
+
+  <style>
+    #contenido p/* Ejercicio 1: Selecciona todos los elementos p dentro del elemento con id="contenido" */
+    {
+      color: blue; /* Texto azul dentro del contenedor con id "contenido" y etiqueta p */
+    }
+
+    .destacado/* Ejercicio 2: Selecciona todos los elementos con la clase "destacado" */
+    {
+      font-weight: bold; /* Texto en negrita para elementos con la clase "destacado" */
+    }
+
+    #encabezado/* Ejercicio 3: Selecciona el elemento con id "encabezado" */
+    {
+      font-size: 24px; /* Tamaño de fuente 24px para el elemento con id "encabezado" */
+    }
+
+    a[target]/* Ejercicio 4: Selecciona todos los enlaces con el atributo target */
+    {
+      text-decoration: none; /* Sin subrayado para enlaces con el atributo target */
+    }
+
+    ul li:first-child/* Ejercicio 5: Selecciona el primer elemento li dentro de un ul */
+    {
+      color: red; /* Color rojo para el primer elemento li dentro de un ul */
+    }
+
+    input[type="text"]/* Ejercicio 6: Borde gris para los campos(input) de texto con selector de Atributo con Valor Específico */
+    {
+      border: 1px solid #ccc; 
+    }
+
+    div span/* Ejercicio 7: Selecciona spans dentro de divs */
+    {
+      background-color: yellow; /* Fondo amarillo para spans dentro de divs */
+    }
+
+    h2+p/* Ejercicio 8: Selecciona el párrafo adyacente a h2 */
+    {
+      margin-top: 10px; /* Margen superior de 10px para el párrafo adyacente a h2 */
+    }
+
+    h3, h4/* Selecciona todos los elementos h3 y h4 en un solo selector*/
+    {
+      font-style: italic; /* Estilo de fuente en cursiva para h3 y h4 */
+    }
+
+    ol>li/* Ejercicio 10: Selecciona elementos li hijos directos de ol */
+    {
+      list-style-type: upper-roman; /* Numeración romana para elementos li hijos directos de ol */
+    }
+  </style>
+</head>
+<body>
+  <div id="contenido">
+    <p>Este es un párrafo dentro del contenido.</p>
+  </div>
+
+  <p class="destacado">Este párrafo está destacado.</p>
+
+  <h1 id="encabezado">Título de la Página</h1>
+
+  <a href="#" target="_blank">Enlace con atributo target</a>
+
+  <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+  <div>
+    <span>Este es un span dentro de un div.</span>
+  </div>
+
+  <h2>Encabezado H2</h2>
+  <p>Párrafo adyacente a H2</p>
+
+  <h3>Subtítulo 1</h3>
+  <h4>Subtítulo 2</h4>
+
+  <ol>
+    <li>Elemento I</li>
+    <li>Elemento II</li>
+    <li>Elemento III</li>
+  </ol>
+
+  <input type="text" value="Input de texto con estilo">
+</body>
+</html>

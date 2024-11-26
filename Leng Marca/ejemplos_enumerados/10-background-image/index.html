@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+
+      
+        /* Ejemplo 1: Fondo con imagen de cobertura */
+        .fondo-imagen {
+            background-image: url('ico.jpg');
+            /* Establece una imagen como fondo */
+            background-size: cover;
+            /* Ajusta la imagen para cubrir completamente el contenedor */
+            background-position: center;
+            /* Centra la imagen en el contenedor */
+            background-repeat: no-repeat;
+            /* Evita que la imagen se repita */
+            color: white;
+            /* Establece el color del texto en blanco */
+            height: 100vh;
+            /* Fuerza la altura del contenedor al 100% de la altura de la ventana gráfica (viewport height) */
+        }
+
+        /* Ejemplo 3: Fondo con patrón repetido */
+        .fondo-patron {
+            background-image: url('pattern3.jpg');
+            /* Establece un patrón como fondo */
+            background-repeat: repeat;
+            /* Permite que el patrón se repita en ambas direcciones */
+            color: white;
+            /* Establece el color del texto en blanco */
+            height: 100vh;
+            /* Fuerza la altura del contenedor al 100% de la altura de la ventana gráfica */
+        }
+
+        /* Ejemplo 4: Fondo con parallax (fondo fijo) */
+        .fondo-parallax {
+            background-image: url('ico.jpg');
+            /* Establece una imagen como fondo */
+            background-attachment: fixed;
+            /* Fija la imagen de fondo para crear un efecto de parallax */
+            background-size: cover;
+            /* Ajusta la imagen para cubrir completamente el contenedor */
+            background-position: center;
+            /* Centra la imagen en el contenedor */
+            background-repeat: no-repeat;
+            /* Evita que la imagen se repita */
+            color: white;
+            /* Establece el color del texto en blanco */
+            height: 100vh;
+            /* Fuerza la altura del contenedor al 100% de la altura de la ventana gráfica */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!-- Ejemplo 2: Fondo con imagen -->
+    <div class="fondo-imagen">
+        <h1>Ejemplo con Fondo de Imagen</h1>
+        <p>Contenido con fondo de imagen.</p>
+    </div>
+
+    <!-- Ejemplo 3: Fondo con patrón repetido-->
+    <div class="fondo-patron">
+        <h1>Ejemplo con Fondo de Patrón Repetido</h1>
+        <p>Contenido con fondo de patrón repetido.</p>
+    </div>
+
+    <!-- Ejemplo 4: Fondo con parallax (fondo fijo) -->
+    <div class="fondo-parallax">
+        <h1>Ejemplo con Fondo de Parallax</h1>
+        <p>Contenido con fondo de parallax (fondo fijo).</p>
+    </div>
+
+</body>
+
+</html>

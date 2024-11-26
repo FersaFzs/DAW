@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de CSS</title>
+
+    <style>
+        */* Ejercicio 1: Selecciona todos los elementos */
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        p/* Ejercicio 2: Selecciona todos los párrafos */
+        {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .destacado/* Ejercicio 3: Selecciona los elementos con la clase "destacado" */
+        {
+            color: #ff0000;
+        }
+
+        #encabezado/* Ejercicio 4: Selecciona el elemento con id "encabezado" */
+        {
+            font-size: 2em;
+        }
+
+        h2, p.destacado/* Ejercicio 5: Agrupación con , - Selecciona los elementos h2 y los parrafos con clase destacado en un solo selector */
+        {
+            text-decoration: underline;
+        }
+
+        #contenido>p/* Ejercicio 6: Selector Hijo Directo - Selecciona los párrafos dentro de #contenido */
+        {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .contenedor span/* Ejercicio 7: Selector Descendente - Selecciona los elementos span dentro de .contenedor */
+        {
+            font-weight: bold;
+        }
+
+        h2+h3/* Ejercicio 8: Selector Adyacente - Selecciona el h3 adyacente a h2 */
+        {
+            margin-top: 20px;
+        }
+
+        input:valid/* Ejercicio 9 Pseudoclase :valid - Estilo para los inputs válidos */
+        {
+            background-color: #ccffcc;
+        }
+
+        input:focus, div:hover/* Ejercicio 10: Pseudoclases - Estilos para los input cuando tengan el foco y los div cuando este el raton encima */
+        {
+            background-color: #3399ff;
+            font-size: 30px;
+        }
+
+        p:not(.excluir)/* Ejercicio 11 Pseudoclase :not - Estilo para todos los párrafos que no tengan la clase "excluir" */
+        {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Ejercicio 1: Selecciona todos los elementos -->
+    <div>
+        <p>Este es un párrafo dentro de un div.</p>
+        <span class="destacado">Este es un span destacado.</span>
+    </div>
+
+    <!-- Ejercicio 2: Selecciona todos los párrafos -->
+    <p>Este es un párrafo normal.</p>
+    <p class="destacado">Este es un párrafo destacado.</p>
+
+    <!-- Ejercicio 3: Selecciona los elementos con la clase "destacado" -->
+    <p class="destacado">Este párrafo tiene la clase "destacado".</p>
+
+    <!-- Ejercicio 4: Selecciona el elemento con id "encabezado" -->
+    <h1 id="encabezado">Título Principal</h1>
+
+    <!-- Ejercicio 5: Agrupación con , - Selecciona los elementos h2 y h3 -->
+    <h2>Subtítulo 1</h2>
+    <h3>Subtítulo 2</h3>
+
+    <div id="contenido">
+        <!-- Ejercicio 6: Selector Hijo Directo - Selecciona los párrafos dentro de #contenido -->
+        <p>Párrafo 1 dentro de #contenido.</p>
+        <p>Párrafo 2 dentro de #contenido.</p>
+    </div>
+
+    <div class="contenedor">
+        <!-- Ejercicio 7: Selector Descendente - Selecciona los elementos span dentro de .contenedor -->
+        <div><span>Este span está dentro de .contenedor.</span></div>
+    </div>
+
+    <h2>Subtítulo 3</h2>
+    <!-- Ejercicio 8: Selector Adyacente - Selecciona el h3 adyacente a h2 -->
+    <h3>Párrafo adyacente a H2.</p>
+
+    <!-- Ejercicio 9: Pseudoclases :valid - Input válido con fondo verde -->
+    Input email valido <input type="email" placeholder="Input válido" required><br>
+
+
+    <!-- Ejercicio 10: Pseudoclases - Estilos para :hover y :focus  -->
+    input con estilos hover y focus
+    <input type="text" placeholder="Campo de texto" required>
+
+
+    <!-- Ejercicio 11 Párrafos sin la clase "excluir" tendrán el estilo italic -->
+    <p>No excluido</p>
+    <p class="excluir">Excluido</p>
+
+
+</body>
+
+</html>

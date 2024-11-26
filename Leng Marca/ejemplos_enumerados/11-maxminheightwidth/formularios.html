@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+	<title>Ejercicio 12</title>
+	<style>
+
+		body{
+			background-color: #fcfcfc;
+			font-family: 'Comfortaa', cursive;
+		}
+		
+		.wrapperFormulario{
+			width: 75%;
+			max-width: 1300px; 
+			margin:  auto;
+			border:  1px solid black;
+			border-radius: 10px;
+			padding: 0em 1em 1em 1em;
+			background-color: #ffffff;
+			box-shadow: -2px 2px 3px 1px rgba(0,0,0,0.63);
+			height: 50%;
+		}
+
+		.wrapperFormulario h2{
+			text-align: center;
+		}
+
+		textarea{
+			width:  100%;
+			box-sizing: border-box;
+			resize:  vertical;
+			border-radius: 5px;
+			margin-top:  5px;
+		}
+
+		input{
+			border-radius: 5px;
+			margin-right:  15px;
+			margin-bottom: 15px;
+		}
+
+		button{
+			font-family: inherit;
+			background-color: black;
+			color: white;
+			border-radius: 5px;
+			font-size:  large;
+			display: block;
+			width: 50%;
+			margin: 10px auto 0px;
+			box-sizing: border-box;
+			padding: 5px 0px;
+			
+		}
+
+		.formGroup{
+			display: inline-block;
+		}
+
+		
+	</style>
+</head>
+<body>
+	<div class="wrapperFormulario">
+
+		<h2>Formulario de contacto</h2>
+		<form action="">
+			<div class="formGroup">
+				<label for="nombre">Nombre: </label>
+				<input type="text" id="nombre" name="nombre">
+			</div>
+			<div class="formGroup">
+				<label for="apellidos">Apellidos: </label>
+				<input type="text" id="apellidos" name="apellidos">
+			</div>
+			<div class="formGroup">
+				<label for="correo">Correo: </label>
+				<input type="email" id="correo" name="correo">	
+			</div>	
+			<br>
+			<label for="">Cuéntanos tu problema: </label>
+			<textarea name="" id="" rows="20">
+			</textarea>
+			<br>
+			<button type="submit">Enviar</button>
+		</form>
+	</div>
+</body>
+</html>

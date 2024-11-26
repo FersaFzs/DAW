@@ -1,0 +1,46 @@
+!<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .contenedor {
+            width: 80%; /* El contenedor ocupa el 80% del ancho de la ventana gráfica */
+            margin: auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .mi-elemento-porcentaje {
+            width: 50%; /* 50% del ancho del contenedor */
+            height: 50%; /* 50% de la altura del contenedor no funciona por defecto asi*/
+            background-color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .mi-elemento-vw-vh {
+            width: 50vw; /* 50% del ancho de la ventana gráfica */
+            height: 50vh; /* 50% de la altura de la ventana gráfica */
+            background-color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="mi-elemento-porcentaje">
+            <p>Usando porcentajes</p>
+        </div>
+
+        <div class="mi-elemento-vw-vh">
+            <p>Usando vw y vh</p>
+        </div>
+    </div>
+
+</body>
+</html>
