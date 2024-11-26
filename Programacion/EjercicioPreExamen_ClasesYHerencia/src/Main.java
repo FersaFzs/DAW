@@ -6,7 +6,7 @@ public class Main {
 
         System.out.println("Coche creado");
         coche1.mostrarDetalles();
-        coche1.endenderMotor();
+        coche1.encenderMotor();
         coche1.abrirPuertas();
     }
 }

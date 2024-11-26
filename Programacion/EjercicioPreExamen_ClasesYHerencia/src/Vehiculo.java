@@ -7,7 +7,7 @@ public abstract class Vehiculo {
         this.modelo = modelo;
     }
 
-    public abstract void endenderMotor();
+    public abstract void encenderMotor();
 
     public void mostrarDetalles(){
         System.out.println("Marca: " + this.marca);

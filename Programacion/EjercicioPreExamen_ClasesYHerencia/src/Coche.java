@@ -7,7 +7,7 @@ public class Coche extends Vehiculo{
     }
 
     @Override
-    public void endenderMotor() {
+    public void encenderMotor() {
         System.out.println("Motor encendido: brum brum");
     }
 
@@ -34,6 +34,7 @@ public class Coche extends Vehiculo{
         String modelo = scanner.nextLine();
         System.out.println("Introduzca el numero de puertas: ");
         int numPuertas = scanner.nextInt();
+        scanner.close();
         return new Coche(marca, modelo, numPuertas);
     }
 
