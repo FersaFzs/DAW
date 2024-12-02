@@ -9,18 +9,20 @@ rm(list = ls())
 
 # insertar librería -------------------------------------------------------
 
-
 library(rstudioapi)
+
 #rstudioapi::versionInfo()
 
 
 # Código ------------------------------------------------------------------
 
-# Declaración de variables
+# Declaración de variables ------------------------------------------------
+
 a <- 2
 b <- 3
 
-# Operadores
+# Operadores --------------------------------------------------------------
+
 a+b
 a-b
 a*b
@@ -41,7 +43,7 @@ d <- 0
 !d
 d
 
-# Tipos
+# Tipos -------------------------------------------------------------------
 
 typeof(a)
 typeof("a")
@@ -50,7 +52,7 @@ typeof(1)
 as.logical(1)
 as.numeric("1.32")
 
-# Vectores
+# Vectores ----------------------------------------------------------------
 
 v <- c(1,2,3,4)
 v
@@ -75,7 +77,48 @@ v3 -v2
 v2*v3
 v2^v3
 
-# Matrix
+
+# Condicionales y bucles --------------------------------------------------
+
+d = 0
+if(d==0){
+  print("d es 0")
+}else{
+  print("d es distinto de 0")
+}
+
+for(i in 1:10){
+  print(i)
+}
+
+i <- 10
+while(i>0){
+  print(i)
+  i = i -1;
+}
+
+
+# Funciones ---------------------------------------------------------------
+
+comprobador_0 <- function(num){
+  if(num==0){
+    print(paste(num, " es 0"))
+  } else {
+    print(paste(num, " es distinto de 0"))
+  }
+}
+
+comprobador_0(15)
+
+iterador_rango <- function(ini, fin){
+  for(i in ini:fin){
+    comprobador_0(i)
+  }
+}
+
+iterador_rango(0, 5)
+
+# Matrix ------------------------------------------------------------------
 
 m1 <- matrix(1:9, nrow = 3, ncol = 3)
 m1
@@ -86,7 +129,9 @@ m1*m2
 m1[,1] #columna
 m1[1,] #fila
 
-# Dataframe
+
+
+# Dataframe ---------------------------------------------------------------
 
 df1 <- data.frame(m1)
 df1
@@ -100,7 +145,85 @@ rownames(df1) <- NULL
 df1[,"Altura"]
 df1["Altura"]  
 
-# Dónde estoy - working directory
+df_alumnos <- data.frame(Nombre=c("Iván", "Javi", "Lara", "Ríos"),
+                         Sexo=factor(c("H", "H","H","H"), c("H", "M")),
+                         Nota=c(10.0, 9.7, 9.8, 6.4))
+df_alumnos
+str(df_alumnos)
+summary(df_alumnos)
+
+
+# Iris --------------------------------------------------------------------
+
+# https://rpubs.com/MrCristianrl/502285
+
+library(ISLR)
+library(ggplot2)
+library(caTools)
+library(class)
+
+df <- iris
+str(df)
+
+any(is.na(df))
+
+ggplot(df, aes(Sepal.Width, Sepal.Length)) +
+  geom_point(aes(col=Petal.Width, 
+                 size=Petal.Length,
+                 shape = Species)) +
+  ggtitle("Longitud y anchura del sepalo según la especie") +
+  labs(x="Anchura del sépalo", 
+       y="Longitud del sépalo", 
+       col="Especie")
+
+ggplot(df, aes(Sepal.Width, Sepal.Length)) +
+  geom_point(aes(col=Species), size=3) +
+  ggtitle("Longitud y anchura del sepalo según la especie") +
+  labs(x="Anchura del sépalo", 
+       y="Longitud del sépalo", 
+       col="Especie")+
+  theme_minimal()
+
+ggsave(paste0(path, "sepalo.png"),
+       width = 8, height = 6, bg = "white")
+
+ggplot(df, aes(Petal.Width, Petal.Length)) +
+  geom_point(aes(col=Species), size=3) +
+  ggtitle("Longitud y anchura del pétalo según la especie") +
+  labs(x="Anchura del pétalo", 
+       y="Longitud del pétalo", 
+       col="Especie")+
+  theme_minimal()
+
+ggsave(paste0(path, "petalo.png"),
+       width =8, height = 6, bg = "white")
+
+ggplot(df, aes(y=Petal.Width)) +
+  geom_boxplot(aes(fill=Species)) +
+  theme_minimal() +
+  ggtitle("Diagrama de cajas para el pétalo")
+
+df.numeric <- df[,1:4]
+specie <- df[,5]
+df.scaled <- data.frame(scale(df.numeric))
+sapply(df.scaled, var)
+sapply(df.scaled, mean)
+
+df.final <-  cbind(df.scaled, specie)
+sample <- sample.split(df.final$specie, SplitRatio = .70)
+train.data <- subset(df.final, sample==TRUE) 
+test.data <- subset(df.final, sample==FALSE)
+
+predicted.species<- knn(train.data[1:4],
+                         test.data[1:4],
+                         train.data[,5],
+                         k=1)
+head(predicted.species)
+
+sum(test.data[,5]==predicted.species) / dim(test.data)[1]
+
+
+# Dónde estoy - working directory -----------------------------------------
 
 getwd()
 

@@ -8,94 +8,94 @@
   <style>
     /* Estilos para la etiqueta p con la clase "parrafo-destacado" */
     p.parrafo-destacado {
-      /* Color de texto verde */
-      /* Fondo amarillo claro R 255 G 200 B 100 */
-      /* Borde sólido de 2 píxeles en color gris oscuro hex 555*/
-      /* Tipo de fuente Georgia o serif si Georgia no está disponible */
-      /* Tamaño de fuente 18 píxeles */
-      /* Texto en estilo normal */
-      /* Texto en peso normal */
-      /* Alineación justificada */
-      /* Márgenes exterior de 10 píxeles */
-      /* Relleno de 15 píxeles */
-      /* Borde redondeado con radio de 8 píxeles */
+      color: green;/* Color de texto verde */
+      background-color: rgba(255,200,100);/* Fondo amarillo claro R 255 G 200 B 100 */
+      border: 2px; border-style: solid; border-color: 555;/* Borde sólido de 2 píxeles en color gris oscuro hex 555*/
+      font-family: Georgia, serif;/* Tipo de fuente Georgia o serif si Georgia no está disponible */
+      font-size: 18px;/* Tamaño de fuente 18 píxeles */
+      font-style: normal;/* Texto en estilo normal */
+      font-weight: normal;/* Texto en peso normal */
+      text-align: justify;/* Alineación justificada */
+      margin: 15px;/* Márgenes exterior de 10 píxeles */
+      padding: 10px;/* Relleno de 15 píxeles */
+      border-radius: 8px;/* Borde redondeado con radio de 8 píxeles */
       
     }
 
     /* Estilos para la etiqueta div con la clase "contenedor" */
     div.contenedor {
-      /* Sin subrayado en el texto */
-      /* Texto en minúsculas */
-      /* Altura de línea 1.6 veces el tamaño de fuente */
-      /* Espaciado entre letras de 2 píxeles */
-      /* Opacidad del 90% */
-      /* Ancho de 400 píxeles */
-      /* Altura de 150 píxeles */
-      /* Márgenes automáticos*/
-      /* Relleno interior de 20 píxeles */
-      /* Fondo azul claro R 100 G 150 B 255, con 50% de opacidad */
-      /* Borde totalmente redondeado*/
+      text-decoration: none;/* Sin subrayado en el texto */
+      text-transform: lowercase;/* Texto en minúsculas */
+      line-height: 1.6em;/* Altura de línea 1.6 veces el tamaño de fuente */
+      letter-spacing: 2px;/* Espaciado entre letras de 2 píxeles */
+      opacity: 90%;/* Opacidad del 90% */
+      width: 400px;/* Ancho de 400 píxeles */
+      height: 150px;/* Altura de 150 píxeles */
+      margin: auto;/* Márgenes automáticos*/
+      padding: 20px;/* Relleno interior de 20 píxeles */
+      background-color: rgba(100,150,255, 0.5);/* Fondo azul claro R 100 G 150 B 255, con 50% de opacidad */
+      border-radius: 100%;/* Borde totalmente redondeado*/
     }
 
     /* Estilos para la etiqueta ul con la clase "lista-personalizada" */
     ul.lista-personalizada {
-      /* Sin viñetas */
-      /* Márgenes izquierdo de 30 píxeles */
-      /* Relleno interior de 10 píxeles */
-      /* Fondo amarillo melocotón hex ffe4c4*/
-      /* Borde punteado en tono coral  hex ff6347 de 2 píxeles */
-      /* Borde redondeado con radio de 5 píxeles */
+      list-style-type: none;/* Sin viñetas */
+      margin-left: 30px ;/* Márgenes izquierdo de 30 píxeles */
+      padding: 10px;/* Relleno interior de 10 píxeles */
+      background-color: #ffe4c4;/* Fondo amarillo melocotón hex ffe4c4*/
+      border-style: dotted; border-color: #ff6347;/* Borde punteado en tono coral  hex ff6347 de 2 píxeles */
+      border-radius: 5px;/* Borde redondeado con radio de 5 píxeles */
       
     }
 
     /* Estilos para el cuerpo (body) */
     body {
-      /* Imagen de fondo */
-      /* Ajusta el tamaño para que la imagen cubra el contenedor */
-      /* No repetir la imagen de fondo */
-      /* Posición centrada */
-      /* Fondo fijo al desplazarse */
-      /* Elimina los márgenes predeterminados del body */
-      /* Añade relleno interior de 20 píxeles */
-      /* Tipo de fuente Arial o sans-serif si Arial no está disponible */
+      background-image: url(./imagenes/reducido.jpg);/* Imagen de fondo */
+      background-size: cover;/* Ajusta el tamaño para que la imagen cubra el contenedor */
+      background-repeat: no-repeat;/* No repetir la imagen de fondo */
+      background-position: center;/* Posición centrada */
+      background-attachment: fixed;/* Fondo fijo al desplazarse */
+      margin: 0;/* Elimina los márgenes predeterminados del body */
+      padding: 20px;/* Añade relleno interior de 20 píxeles */
+      font-family: Arial, sans-serif;/* Tipo de fuente Arial o sans-serif si Arial no está disponible */
     }
 
     /* Estilos para la clase "caja-info" */
     .caja-info {
-      /* Borde redondeado con radio de 15 píxeles */
-      /*Sombra con desplazamiento horizontal: 5px, desplazamiento vertical: 5px, radio de desenfoque: 20px, color de la sombra: cyan */
-      /* Relleno interior de 15 píxeles */
-      /* Márgenes inferior de 20 píxeles */
+      border-radius: 15px;/* Borde redondeado con radio de 15 píxeles */
+      box-shadow: 5px 5px 20px cyan;/*Sombra con desplazamiento horizontal: 5px, desplazamiento vertical: 5px, radio de desenfoque: 20px, color de la sombra: cyan */
+      padding: 15px;/* Relleno interior de 15 píxeles */
+      margin-bottom: 20px;/* Márgenes inferior de 20 píxeles */
     }
 
     /* Estilos para la clase "titulo-seccion" */
     .titulo-seccion {
-      /* Color de texto hexadecimal 4b0082 */
-      /* Tamaño de fuente 24 píxeles */
-      /* Texto en negrita */
-      /* Alineación centrada */
-      /* Márgenes inferior de 10 píxeles */
+      color: #4b0082;/* Color de texto hexadecimal 4b0082 */
+      font-size: 24px;/* Tamaño de fuente 24 píxeles */
+      font-weight: bold;/* Texto en negrita */
+      text-align: center;/* Alineación centrada */
+      margin-bottom: 10px;/* Márgenes inferior de 10 píxeles */
     }
 
     /* Estilos para la clase "enlace-navegacion" */
     .enlace-navegacion {
-      /* Color de texto verde azulado hexa 008080 */
-      /* Sin subrayado en el enlace */
-      /* Texto en negrita */
+      color: #008080;/* Color de texto verde azulado hexa 008080 */
+      text-decoration: none;/* Sin subrayado en el enlace */
+      font-weight: bold;/* Texto en negrita */
     }
 
     /* Estilos para la clase "caja-foto" */
     .caja-foto {
-       /* Alineación centrada */
-       /* Márgenes superior e inferior de 20 píxeles, laterales automáticos */
+       text-align: center;/* Alineación centrada */
+       margin: 20px auto;/* Márgenes superior e inferior de 20 píxeles, laterales automáticos */
     }
 
     /* Estilos para la clase "foto-destacada" */
     .foto-destacada {
-       /* Opacidad del 70% */
-       /* Ancho del 80% del contenedor padre */
-       /* Borde redondeado con radio de 8 píxeles */
-      /* Desplazamiento horizontal: 0px, desplazamiento vertical: 0px, radio de desenfoque: 15px, color de la sombra: chartreuse */
+       opacity: 70%;/* Opacidad del 70% */
+       width: 80%em ;/* Ancho del 80% del contenedor padre */
+       border-radius: 8px;/* Borde redondeado con radio de 8 píxeles */
+       box-shadow: 0px 0px 15px chartreuse;/* Desplazamiento horizontal: 0px, desplazamiento vertical: 0px, radio de desenfoque: 15px, color de la sombra: chartreuse */
     }
   </style>
 </head>

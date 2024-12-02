@@ -1,1 +1,4 @@
 Sitio para buscar cosas tanto de programación como de base de datos
+
+Página referencia idol:
+https://www.danielvaszka.com/
