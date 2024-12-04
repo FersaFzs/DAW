@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ab035b3-904b-4d7b-9569-070d6916e540" name="Changes" comment="" />
+    <list default="true" id="4ab035b3-904b-4d7b-9569-070d6916e540" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Entornos Desarrollo/DISEÑADOR UX.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Entornos Desarrollo/DISEÑADOR UX.docx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,7 +22,6 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.LetterGenerator.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
