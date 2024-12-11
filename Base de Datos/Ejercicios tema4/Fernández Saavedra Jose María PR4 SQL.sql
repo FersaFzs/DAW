@@ -33,3 +33,10 @@ FROM repventas
 JOIN repventas empl ON repventas.director = empl.num_empl
 JOIN oficinas ON empl.oficina_rep = oficinas.oficina;
 
+-- Ejercicio 6
+SELECT repventas.nombre, repventas.num_empl, e.nombre AS nombre_director_empleado, e.oficina_rep, o.dir, d.nombre
+FROM repventas
+JOIN repventas e ON repventas.director = e.num_empl
+JOIN oficinas o ON o.oficina = e.oficina_rep
+JOIN repventas d ON o.dir = d.num_empl
+WHERE e.num_empl = o.dir;
