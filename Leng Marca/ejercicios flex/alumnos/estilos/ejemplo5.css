@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* background-color: black; */
+    /* padding: 1rem; */
+    /* font-size: 1.3rem; */
+    /* border-bottom: 4px gray solid; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    
+}
+
+.menu a {
+    /* text-decoration: none; */
+    /* color: white; */
+    /* display: inline-block; */
+    /* margin: 0.25rem 0.5rem; */
+}
+
+.menu a:hover {
+    /* text-decoration: underline; */
+}
+
+
+.socialMedia i {
+    /* color: white; */
+    /* margin: 0.25rem 0.5rem; */
+}

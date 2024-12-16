@@ -1,0 +1,48 @@
+h1,h2{
+    text-align: center;
+}
+
+.cabecera{
+    display: flex;
+    justify-content: center;
+}
+
+.cabecera h1{
+    padding:  0px 1em;
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+@keyframes spin2 { 
+    100% { 
+        -webkit-transform: rotate(-360deg); 
+        transform:rotate(-360deg); 
+    } 
+}
+
+.cabecera img:nth-child(1){
+    animation:spin 2s linear infinite;
+}
+
+.cabecera img:nth-child(3){
+    animation: spin2 2s linear infinite;
+}
+
+
+img{
+    width: 75px;
+    height: 75px;
+}
+
+.ejercicio{
+    background-color: #1f5768;
+    margin: auto;
+    width: 500px;
+    height: 350px;
+    display: flex;
+}	
