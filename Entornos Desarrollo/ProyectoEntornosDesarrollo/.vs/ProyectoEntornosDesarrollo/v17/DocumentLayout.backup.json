@@ -1,0 +1,120 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|c:\\users\\administrator\\desktop\\daw\\entornos desarrollo\\proyectoentornosdesarrollo\\proyectoentornosdesarrollo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|solutionrelative:proyectoentornosdesarrollo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|c:\\users\\administrator\\desktop\\daw\\entornos desarrollo\\proyectoentornosdesarrollo\\proyectoentornosdesarrollo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|solutionrelative:proyectoentornosdesarrollo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|c:\\users\\administrator\\desktop\\daw\\entornos desarrollo\\proyectoentornosdesarrollo\\proyectoentornosdesarrollo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|solutionrelative:proyectoentornosdesarrollo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|c:\\users\\administrator\\desktop\\daw\\entornos desarrollo\\proyectoentornosdesarrollo\\proyectoentornosdesarrollo\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|solutionrelative:proyectoentornosdesarrollo\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|c:\\users\\administrator\\desktop\\daw\\entornos desarrollo\\proyectoentornosdesarrollo\\proyectoentornosdesarrollo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|solutionrelative:proyectoentornosdesarrollo\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|c:\\users\\administrator\\desktop\\daw\\entornos desarrollo\\proyectoentornosdesarrollo\\proyectoentornosdesarrollo\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7FA16C3-7683-4D33-92FB-92EF3B60577A}|ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo.csproj|solutionrelative:proyectoentornosdesarrollo\\form2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form2.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoEntornosDesarrollo\\Form2.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form2.Designer.cs",
+              "RelativeToolTip": "ProyectoEntornosDesarrollo\\Form2.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T21:36:38.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form2.cs",
+              "RelativeDocumentMoniker": "ProyectoEntornosDesarrollo\\Form2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form2.cs",
+              "RelativeToolTip": "ProyectoEntornosDesarrollo\\Form2.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwDoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T21:36:51.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoEntornosDesarrollo\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoEntornosDesarrollo\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T20:17:39.359Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form1.cs",
+              "RelativeDocumentMoniker": "ProyectoEntornosDesarrollo\\Form1.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form1.cs",
+              "RelativeToolTip": "ProyectoEntornosDesarrollo\\Form1.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T20:18:20.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form2.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form2.cs",
+              "RelativeDocumentMoniker": "ProyectoEntornosDesarrollo\\Form2.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form2.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoEntornosDesarrollo\\Form2.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T21:32:28.778Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoEntornosDesarrollo\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\DAW\\Entornos Desarrollo\\ProyectoEntornosDesarrollo\\ProyectoEntornosDesarrollo\\Form1.Designer.cs",
+              "RelativeToolTip": "ProyectoEntornosDesarrollo\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-19T20:18:40.998Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
