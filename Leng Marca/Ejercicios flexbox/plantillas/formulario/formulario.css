@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Configuración general para el cuerpo del documento */
+
+body {
+    background-image: url('imagen'); /* Cambia 'imagen' por la URL de tu imagen */
+    background-repeat:repeat; /*puede dejarlo o no */
+    font-family: 'Roboto'; /* Selecciona la fuente 'Roboto' o una fuente sans-serif genérica para el texto del cuerpo. */
+    font-size: 1rem; /* Establece el tamaño de fuente a 1 rem*/
+}
+
+#contenedor {
+    width: 40%;/* Establece el ancho del contenedor principal al 40% del ancho del contenedor padre. */
+    min-width: 500px;/* Establece el ancho mínimo del contenedor principal en 500 píxeles. */
+    background-color: rgba(255, 255, 255, 0.7);/* Establece un fondo blanco semi-transparente utilizando valores RGBA. */
+    /* Agrega bordes redondeados al contenedor principal de 8px en todos los lados. */
+}
+
+#formWrapper {
+   /* Añade un relleno interno de 20 píxeles al contenedor del formulario. */
+}
+
+#logIn {
+    /* Solo tiene estilos flexibles */
+}
+
+#logIn > div {
+   /* Agrega un margen inferior de 15 píxeles entre cada div dentro del formulario. */
+}
+
+/* Estilo para las etiquetas del formulario */
+  /* Establece un peso de fuente de 700 para las etiquetas del formulario. */
+     /* Agrega un margen derecho de 10 píxeles a las etiquetas del formulario. */
+
+
+/* Estilo para los campos de entrada del formulario */
+   /* El font size se hereda del body */
+    /* Añade un relleno interno de 8 píxeles a los campos de entrada. */
+    /* Establece un borde sólido de 1 píxel con un color gris claro. */
+    /* Agrega bordes redondeados a los campos de entrada. */
+
+#enviar {
+    cursor: pointer;
+    transition: background-color 1s ease;
+    /* Establece el color de fondo del botón de enviar a verde. */
+    /* Establece el color del texto del botón de enviar a blanco. */
+    /* Añade un relleno interno de 10 píxeles al botón de enviar. */
+    /* Elimina el borde del botón de enviar. */
+    /* Agrega bordes redondeados al botón de enviar. */
+    /* El font size se hereda del body */
+}
+
+
+/* Estilo para el botón de enviar al pasar el ratón sobre él */
+      /* Cambia el color de fondo del botón de enviar a azul al pasar el ratón sobre él. */
+
+
+
+

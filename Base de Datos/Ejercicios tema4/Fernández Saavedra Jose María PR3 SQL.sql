@@ -27,14 +27,21 @@ ORDER BY num_empl;
  WHERE oficinas.ciudad = 'Toledo';
  
  -- Ejercicio 5
-SELECT p.*, productos.descripción, emp.nombre_empleado, cli.nombre_cliente
+SELECT pedidos.*, productos.descripción, repventas.nombre, clientes.empresa
 FROM pedidos 
-JOIN productos ON p.codigo_producto = prod.codigo_producto
-JOIN empleados ON p.codigo_empleado = emp.codigo_empleado
-JOIN clientes ON p.codigo_cliente = cli.codigo_cliente
-WHERE p.importe > 20000;
+JOIN productos ON pedidos.producto = productos.id_producto
+JOIN repventas ON pedidos.rep = repventas.num_empl
+JOIN clientes ON pedidos.clie = clientes.num_clie
+WHERE pedidos.importe > 20000;
 
- 
+-- Ejercicio 6
+SELECT pedidos.num_pedido, productos.descripción,
+productos.precio AS precio_original, 
+ROUND(pedidos.importe/pedidos.cant, 0) AS precio_compra
+FROM productos 
+JOIN pedidos ON productos.id_producto = pedidos.producto
+WHERE productos.precio != ROUND(pedidos.importe/pedidos.cant);
+
 -- Ejercicio 7
 SELECT empleados.*
 FROM repventas empleados

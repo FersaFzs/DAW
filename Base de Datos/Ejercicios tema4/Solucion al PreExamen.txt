@@ -1,0 +1,111 @@
+
+-- -----------------------------------------------------
+-- 1. Consulta básica con cálculo
+-- Mostrar el nombre, precio y un 20% del precio de todos los productos como "descuento sugerido".
+-- -----------------------------------------------------
+SELECT id_producto, precio, precio * 0.2 AS descuento_sugerido
+FROM productos;
+
+-- -----------------------------------------------------
+-- 2. Consulta con múltiples filtros
+-- Listar los productos que tienen un precio entre 100 y 500 euros y que pertenezcan a fabricantes cuyo nombre comience con la letra 'A'.
+-- -----------------------------------------------------
+SELECT p.id_producto, p.precio
+FROM productos p
+WHERE p.precio BETWEEN 100 AND 500
+  AND p.id_fab LIKE 'A%';
+
+-- -----------------------------------------------------
+-- 3. Consulta con agregación y agrupamiento
+-- Obtener el fabricante y la cantidad total de productos que tiene disponibles cada uno. Mostrar solo los fabricantes con más de 5 productos.
+-- -----------------------------------------------------
+SELECT p.id_fab, COUNT(p.id_producto) AS total_productos
+FROM productos p
+GROUP BY p.id_fab
+HAVING COUNT(p.id_producto) > 5;
+
+-- -----------------------------------------------------
+-- 4. Subconsulta obligatoria (comparación avanzada)
+-- Listar los productos cuyo precio sea superior al precio promedio de los productos de su mismo fabricante.
+-- -----------------------------------------------------
+SELECT p.id_producto, p.precio
+FROM productos p
+WHERE p.precio > (
+    SELECT AVG(p2.precio)
+    FROM productos p2
+    WHERE p2.id_fab = p.id_fab
+);
+
+-- -----------------------------------------------------
+-- 5. Consulta con combinación de múltiples JOIN
+-- Mostrar el nombre del cliente, el producto comprado y el precio total de la compra, considerando descuentos aplicados si corresponde (usar JOIN con las tablas de clientes, ventas y productos).
+-- -----------------------------------------------------
+SELECT c.empresa AS cliente, p.id_producto AS producto, pe.cant * p.precio AS precio_total
+FROM clientes c
+JOIN pedidos pe ON c.num_clie = pe.clie
+JOIN productos p ON pe.producto = p.id_producto AND pe.fab = p.id_fab;
+
+-- -----------------------------------------------------
+-- 6. Consulta con condición de existencia (EXISTS)
+-- Listar los nombres de los clientes que hayan comprado al menos un producto de un fabricante específico (en este caso, supongo que se te pide un fabricante con nombre "BIC").
+-- -----------------------------------------------------
+SELECT c.empresa
+FROM clientes c
+WHERE EXISTS (
+    SELECT 1
+    FROM pedidos pe
+    JOIN productos p ON pe.producto = p.id_producto AND pe.fab = p.id_fab
+    WHERE pe.clie = c.num_clie
+      AND p.id_fab = 'BIC'
+);
+
+-- -----------------------------------------------------
+-- 7. Subconsulta obligatoria (anidada)
+-- Mostrar el nombre de los productos que tienen el menor precio dentro de cada categoría de productos.
+-- -----------------------------------------------------
+SELECT p.id_producto
+FROM productos p
+WHERE p.precio = (
+    SELECT MIN(p2.precio)
+    FROM productos p2
+    WHERE p2.id_fab = p.id_fab
+);
+
+-- -----------------------------------------------------
+-- 8. Clientes que gastaron más que el cliente con el menor gasto total
+-- Identificar los clientes cuyo gasto total es superior al gasto total del cliente que menos ha gastado.
+-- -----------------------------------------------------
+WITH gasto_cliente AS (
+    SELECT pe.clie, SUM(pe.cant * p.precio) AS total_gasto
+    FROM pedidos pe
+    JOIN productos p ON pe.producto = p.id_producto AND pe.fab = p.id_fab
+    GROUP BY pe.clie
+)
+SELECT c.empresa, gc.total_gasto
+FROM clientes c
+JOIN gasto_cliente gc ON c.num_clie = gc.clie
+WHERE gc.total_gasto > (SELECT MIN(total_gasto) FROM gasto_cliente);
+
+-- -----------------------------------------------------
+-- 9. Consulta con múltiples subconsultas
+-- Listar los productos que han sido comprados exclusivamente por clientes que hayan realizado más de 3 compras.
+-- -----------------------------------------------------
+SELECT p.id_producto
+FROM productos p
+WHERE NOT EXISTS (
+    SELECT 1
+    FROM pedidos pe
+    WHERE pe.producto = p.id_producto
+    GROUP BY pe.clie
+    HAVING COUNT(pe.num_pedido) <= 3
+);
+
+-- -----------------------------------------------------
+-- 10. Categorías que tienen al menos dos productos con ventas superiores a 100 unidades
+-- Mostrar las categorías que tienen al menos dos productos distintos con ventas totales (cantidad vendida) superiores a 100 unidades.
+-- -----------------------------------------------------
+SELECT p.id_fab, COUNT(DISTINCT p.id_producto) AS productos
+FROM productos p
+JOIN pedidos pe ON p.id_producto = pe.producto AND p.id_fab = pe.fab
+GROUP BY p.id_fab
+HAVING SUM(pe.cant) > 100 AND COUNT(DISTINCT p.id_producto) >= 2;

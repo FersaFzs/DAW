@@ -1,0 +1,33 @@
+body{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+h1{
+    font-family: 'Orbitron', 'Sans-serif';
+    color: yellow;
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Orbitron', 'Sans-serif';
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.planetas>div{
+    width: 25%;
+    min-width: 300px;
+}
+
+.planetas{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 100%;
+}

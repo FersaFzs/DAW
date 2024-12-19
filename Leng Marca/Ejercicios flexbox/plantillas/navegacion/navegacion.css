@@ -1,0 +1,44 @@
+* {
+margin: 0px;
+padding: 0px;
+}
+
+nav{
+    font-family: 'Orbitron', 'Sans-serif';
+    background-color: black;
+    font-size: 1.75em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 3px;
+    border-bottom-color: midnightblue;
+}
+
+nav ul{
+    display: inline;
+    list-style-type: none ;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 1rem;
+}
+
+#enlaces{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+}
+
+#rrss{
+    padding: 0.5em 0.5em;
+    background-color: midnightblue;
+}
+
+

@@ -1,0 +1,23 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+div{
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: baseline;
+    border: 1px white solid;
+}
+
+div>img{
+    width: 25%;
+    box-sizing: border-box;
+}
+
+div>p{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 75%;
+}

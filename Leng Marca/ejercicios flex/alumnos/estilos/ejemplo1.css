@@ -1,0 +1,45 @@
+body {
+    background-color: #EEE;
+}
+
+.partido {
+    background-color: white;
+    max-width: 800px;
+    /* min-width: 400px; */
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    padding: 30px 20px;
+    -webkit-box-shadow: 12px 12px 7px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 12px 12px 7px -4px rgba(0, 0, 0, 0.75);
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-around;
+    /* flex-wrap: nowrap; */
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.cabecera>span:nth-child(even) {
+    font-style: italic;
+}
+
+.cabecera>img {
+    width: 60px;
+}
+
+.cuerpo>p:first-child {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cuerpo>img {
+    float: right;
+    width: 40%;
+    padding: 10px 0px 10px 10px;
+}

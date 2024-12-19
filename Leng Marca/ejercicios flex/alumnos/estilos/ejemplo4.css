@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+    
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+.planetario{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planetario>img{
+    width: 20%;
+}
+
+/* .planetario>img.satelite{
+    width: 5%;
+    align-self: flex-start;
+} */

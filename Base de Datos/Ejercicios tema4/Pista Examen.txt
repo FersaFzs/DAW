@@ -1,0 +1,80 @@
+-- 7. 
+SELECT 
+    p.id_producto
+FROM 
+    empresa_asir1.productos p
+WHERE 
+    p.id_producto IN (
+        SELECT 
+            pd.producto
+        FROM 
+            empresa_asir1.pedidos pd
+        GROUP BY 
+            pd.producto
+        HAVING 
+            SUM(pd.cant) > (
+                SELECT 
+                    AVG(total_cant)
+                FROM (
+                    SELECT 
+                        pd2.producto,
+                        SUM(pd2.cant) AS total_cant
+                    FROM 
+                        empresa_asir1.pedidos pd2
+                    GROUP BY 
+                        pd2.producto
+                ) subquery
+            )
+    );
+
+-- 8. 
+SELECT 
+    c.empresa AS cliente, 
+    COUNT(p.num_pedido) AS num_compras,
+    SUM(p.importe) AS total_gastado
+FROM 
+    empresa_asir1.clientes c
+JOIN 
+    empresa_asir1.pedidos p ON c.num_clie = p.clie
+GROUP BY 
+    c.num_clie
+HAVING 
+    COUNT(p.num_pedido) > 5;
+
+-- 9. 
+SELECT 
+    p.id_producto
+FROM 
+    empresa_asir1.productos p
+WHERE 
+    p.id_fab IN (
+        SELECT 
+            pd.fab
+        FROM 
+            empresa_asir1.pedidos pd
+        JOIN 
+            empresa_asir1.clientes c ON pd.clie = c.num_clie
+        JOIN 
+            empresa_asir1.oficinas o ON o.región = c.región
+        WHERE 
+            pd.importe > 100
+        GROUP BY 
+            pd.fab
+        HAVING 
+            COUNT(DISTINCT pd.producto) >= 3
+    );
+
+-- 10. 
+SELECT 
+    p.id_fab AS categoria
+FROM 
+    empresa_asir1.productos p
+JOIN 
+    empresa_asir1.pedidos pd ON p.id_producto = pd.producto
+GROUP BY 
+    p.id_fab
+HAVING 
+    COUNT(DISTINCT pd.producto) >= 2
+    AND SUM(pd.cant) > 100
+ORDER BY 
+    SUM(pd.cant) DESC;
