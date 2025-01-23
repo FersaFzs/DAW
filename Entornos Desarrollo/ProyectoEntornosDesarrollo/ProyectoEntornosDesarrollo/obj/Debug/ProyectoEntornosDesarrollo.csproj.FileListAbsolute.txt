@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\bin\Debug\ProyectoEntornosDesarrollo.exe.config
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\bin\Debug\ProyectoEntornosDesarrollo.exe
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\bin\Debug\ProyectoEntornosDesarrollo.pdb
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.Form1.resources
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.Properties.Resources.resources
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.exe
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.pdb
+C:\Users\Administrator\Desktop\DAW\Entornos Desarrollo\ProyectoEntornosDesarrollo\ProyectoEntornosDesarrollo\obj\Debug\ProyectoEntornosDesarrollo.Form2.resources
