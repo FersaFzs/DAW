@@ -4,7 +4,7 @@ public class CalculadoraDescuentos {
     // Debería devolver el precio con descuento
     // Si el porcentaje no es correcto lanza una excepcion
 
-    public double aplicarDescuento(double precioOriginal, double porcentajeDescuento) {
+    public static double aplicarDescuento(double precioOriginal, double porcentajeDescuento) {
         if (porcentajeDescuento < 0 || porcentajeDescuento > 100) {
             throw new IllegalArgumentException("El porcentaje de descuento debe estar entre 0 y 100.");
         }
