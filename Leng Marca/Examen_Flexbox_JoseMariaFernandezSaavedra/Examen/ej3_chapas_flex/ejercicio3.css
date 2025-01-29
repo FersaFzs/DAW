@@ -1,0 +1,131 @@
+#ej1{
+	display: flex;
+    align-items: center;
+    flex-direction: column ;
+    justify-content: space-evenly;
+}
+
+#ej1 img {
+	justify-content: center;
+}
+
+#ej2 {
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ej2 img {
+    justify-content: center;
+}
+
+#ej3{
+	display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#ej4{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#ej5{
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#ej6{
+	display: flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#ej7{
+	display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    align-content: flex-end;
+}
+
+#ej8{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#ej9{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+#ej10{
+	display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+}
+#ej11{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+#ej11>.alhambra {
+    order: -2;   
+}
+
+#ej12{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#ej12>.alhambra{
+    order: 0;
+    align-self: flex-start;
+}
+
+#ej13{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content:flex-end;
+    align-content: flex-end;
+}
+#ej13>img:nth-child(2n+1){
+    align-self: flex-start;
+}
+
+#ej14{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#ej14>img:nth-child(2n){
+    align-self: flex-start;
+}
+
+#ej15{
+    display: flex;
+    flex-direction: column-reverse;
+}
+#ej15>img:nth-child(2n+1){
+    align-self: flex-end;
+}

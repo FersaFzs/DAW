@@ -1,0 +1,94 @@
+/* Estilos globales para todos los elementos */
+* {
+    box-sizing: border-box;
+    /* Hace que el padding y el borde se incluyan en el ancho y alto del elemento */
+    margin: 0;
+    /* Elimina el margen predeterminado en todos los elementos */
+}
+
+body/* Estilos para el cuerpo de la página */
+{
+    display: flex;/* Usa un modelo de caja flexible */
+    justify-content: center;/* Centra horizontalmente los elementos dentro del cuerpo */
+    align-items: center;/* Centra verticalmente los elementos dentro del cuerpo */
+    height: 100%;/* La altura es del 100% del viewport (ventana del navegador) */
+    font-family: 'Montserrat', sans-serif;/* Usa la fuente 'Montserrat' o una fuente similar sin serif */
+    background-image: url("./assets/cenefa.png");/* Establece una imagen de fondo en los assets con el fichero cenefa.png*/
+    background-repeat: repeat;/* Repite la imagen de fondo en ambas direcciones */
+}
+
+/* Estilos para el contenedor principal */
+#contenedor{
+    width: 60%;/* Ancho del contenedor 60% */
+    min-width: 500px;/* Ancho mínimo del contenedor 500px */
+    background-color: rgba(219, 223, 197, 0.8);/* Color de fondo del contenedor con una transparencia rgba 219, 223, 197, 0.8 */
+    border-radius: 8px;/* Borde redondeado 8px para todos las esquinas */
+    padding: 20px;/* Espaciado interno del contenedor 20px por todos los lados */
+    color: white;/* Color de texto dentro del contenedor blanco */
+}
+
+/* Estilos para el formulario */
+form{
+    display: flex;/* Usa un modelo de caja flexible */
+    flex-direction: column;/* Apila los elementos en una columna */
+}
+
+/* Estilos para un div con la clase grupo de elementos del formulario */
+.grupo{
+    margin-bottom: 15px;/* Margen inferior para separar los grupos 15px por todos los lados */
+    display: flex;/* Usa un modelo de caja flexible */
+    align-content:  center;/* Centra verticalmente los elementos dentro del grupo */
+}
+
+/* Estilos para las etiquetas del formulario */
+form label{
+    font-weight: 700;/* Peso de la fuente 700 */
+    margin-right: 10px;/* Margen derecho para separar la etiqueta del campo de entrada 10px por todos los lados */
+    flex:1;/* Ocupa todo el espacio disponible en la fila que deja su input o textarea */
+    color: #282424;/* Color del texto de la etiqueta 282424 hexadecimal */
+}
+
+
+
+/* Estilos para los campos de entrada y áreas de texto dentro de la clase grupo */
+.grupo input, .grupo textarea{
+    flex:2;/* Ocupa dos veces más espacio que la etiqueta en la fila */
+    padding: 8px;/* Espaciado interno */
+    border-radius:5px;/* Borde redondeado */
+    font-size: 1rem;/* Tamaño de fuente 1 rem */
+    background-color: #a1d8e6;/* Color de fondo del campo a1d8e6 hexadecimal */
+    color: white;/* Color del texto dentro del campo blanco */
+}
+
+.grupo [type="text"]/* Estilos específicos para campos de entrada de tipo texto dentro de la clase grupo */
+{
+    border: solid red 2px;/* Borde sólido rojo de 2px */
+}
+
+.grupo [type="password"]/* Estilos específicos para campos de entrada de tipo contraseña dentro de la clase grupo */
+{
+    border: dashed green 2px;/* Borde punteado verde de 2px */
+}
+
+.grupo [type="number"]/* Estilos específicos para campos de entrada de tipo número dentro de la clase grupo */
+{
+    border: dotted blue 2px;/* Borde de puntos azules de 2px */
+}
+
+/* estilos aplicados al botón por id */
+    #enviar{
+    background-color: #4559a0;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 1s ease;
+}
+
+/* cambiar el color de fondo del boton al estar el raton encima */
+    #enviar:hover{
+    background-color: #da76e7;
+    /* Cambia el color de fondo del botón al pasar el cursor */
+}

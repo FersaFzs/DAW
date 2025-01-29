@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Formulario CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        
+    </style>
+    <link rel="stylesheet" href="ejercicio4.css">
+</head>
+
+<body>
+    <div id="contenedor">
+        <form action="#">
+            <div class="grupo">
+                <!-- Etiqeta label con el texto "Codigo de acceso" -->
+                <!-- El campo es obligatorio de 4 caracteres-->
+                <!-- Etiqueta input de tipo contraseña con id "codigo" y texto de ayuda como en la captura-->
+                <!-- Se implementa la accesibilidad entre el label y el input-->
+                <label for="codigo">Código de acceso:</label>
+                <input id="codigo" name="codigo" type="password" maxlength="4" minlength="4" placeholder="Ingrese su código de acceso" required>
+            </div>
+            <div class="grupo">
+                <!-- Etiqueta label con el texto "Alias" -->
+                <!-- Como maximo 5 caracteres-->
+                <!-- Etiqueta input de tipo texto con id "alias" y texto de ayuda como en la captura-->
+                <!-- Se implementa la accesibilidad entre el label y el input-->
+                <label for="alias">Alias:</label>
+                <input id="alias" name="alias" type="text" maxlength="5" placeholder="Ingrese su alias">
+            </div>
+            <div class="grupo">
+                <!-- Etiqueta label con el texto "Personas en la unidad familiar" -->
+                <!-- Etiqueta input de tipo numero con id "personas" y texto de ayuda como en la captura-->
+                <!-- Se implementa la accesibilidad entre el label y el input-->
+                <label for="personas">Personas en la unidad familiar:</label>
+                <input id="personas" name="numPersonas" type="number" placeholder="Personas que hay en su familia contandola a usted">
+            </div>
+            <div class="grupo">
+                <!-- Etiqueta label con el texto "Codigo de acceso" -->
+                <!-- Etiqueta input list con id "pais" y texto de ayuda como en la captura-->
+                <!-- el atributo para conectar el datalist y el input es indiferente-->
+                <!-- Se implementa la accesibilidad entre el label y el input-->
+                <!-- Las opciones son España, Mexico y Argentina-->
+                <label for="pais">País:</label>
+                <input list="pais" name="pais" placeholder="Seleccione su país">
+                <datalist id="pais">
+                    <option value="España"> </option>  
+                    <option value="Mexico"></option>
+                    <option value="Argentina"></option>
+                </datalist>
+            </div>
+
+            <div class="grupo">
+                <!-- Etiqueta label con el texto "Curriculum (PDF)" -->
+                <!-- Etiqueta input de tipo fichero con id "curriculum"-->
+                <!-- El campo es obligatorio-->
+                <!-- Solo admite pdf "application/pdf"-->
+                <!-- Se implementa la accesibilidad entre el label y el input-->
+                <label for="curriculum">Curriculum (PDF):</label>
+                <input id="curriculum" name="curriculum" type="file" required accept="application/pdf">
+            </div>
+            <button id="enviar" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

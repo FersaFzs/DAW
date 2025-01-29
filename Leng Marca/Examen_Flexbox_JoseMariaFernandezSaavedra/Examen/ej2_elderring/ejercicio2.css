@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.enlaces a {
+    margin:0px 0.5rem;
+}
+
+nav {
+    padding-left: 1rem;
+    font-family: 'Grenze Gotisch', cursive;
+    background-color: black;
+    border-bottom: 2px solid gold;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    font-weight: bold;
+    font-style: oblique;
+    display: inline;
+}
+
+#logo {
+    height: 4rem;
+}
+
+.rrss {
+    margin-right: 1rem;
+}
+
+.rrss a {
+    margin: 0px 0.5rem;
+}
+
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
