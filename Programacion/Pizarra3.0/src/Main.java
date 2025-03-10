@@ -1,6 +1,3 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class Main {
     public static void main(String[] args) {
         //Ejercicio 3: Gestión de Inventario
@@ -15,7 +12,7 @@ public class Main {
 
         i1.AgregarProducto(p1);
 
-        i1.ActualizarCantidad(p1,6);
+        i1.ActualizarCantidad(p1,3);
 
         i1.listarProductos();
 
