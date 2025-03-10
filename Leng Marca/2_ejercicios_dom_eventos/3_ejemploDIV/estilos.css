@@ -1,0 +1,11 @@
+div#info
+{
+    box-sizing: border-box;
+    border: 2px solid red;
+    position: absolute;
+    left:30%;
+    top:30%;
+    width:200px;
+    height: 200px;
+    text-align: center;
+}

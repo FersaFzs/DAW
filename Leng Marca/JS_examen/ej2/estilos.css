@@ -1,0 +1,15 @@
+.formato{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    width:20%;  
+    border:3px solid red;
+    text-align: center; 
+}
+
+.formato tr:nth-child(2n){
+    background-color: aquamarine;
+}
+
+.formato tr:nth-child(2n+1){
+    background-color: thistle;
+}
