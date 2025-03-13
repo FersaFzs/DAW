@@ -37,13 +37,14 @@ document.body.appendChild(document.createElement("br"));
 
 // b) Generar una tabla con clase "formato"
 const tabla = document.createElement("table");
+
 tabla.classList.add("formato");
 
-contenido.forEach(texto => {
+contenido.forEach(dato => {
   const fila = document.createElement("tr");
-  const celda = document.createElement("td");
-  celda.textContent = texto;
-  fila.appendChild(celda);
+  const columna = document.createElement("td");
+  columna.textContent = texto;
+  fila.appendChild(columna);
   tabla.appendChild(fila);
 });
 document.body.appendChild(tabla);
