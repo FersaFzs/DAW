@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
+import java.net.FileNameMap;
 import java.util.ArrayList;
 
 public class FormularioCoches extends JFrame {
@@ -15,24 +15,40 @@ public class FormularioCoches extends JFrame {
     public FormularioCoches(JFrame parent, ArrayList<Coche> coches){
         this.coches = coches;
 
-        setTitle("Añadir Coche");
+        setTitle("NUEVO COCHE");
         setSize(400, 400);
         setLocationRelativeTo(parent);
-        setLayout(new GridLayout(4, 2, 10, 10));
+        setLayout(new GridLayout(4, 2, 0, 0));
+        setFont(new Font("Arial", Font.BOLD, 18));
 
-        add(new JLabel("Marca: "));
+        JLabel labelMarca = new JLabel("  MARCA: ");
+        labelMarca.setForeground(Color.BLACK);
+        labelMarca.setFont(new Font("Arial", Font.BOLD, 18));
+        add(labelMarca);
         inputMarca = new JTextField();
+        inputMarca.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2));
+        inputMarca.setFont(new Font("Arial", Font.PLAIN, 16));
         add(inputMarca);
 
-        add(new JLabel("Anio: "));
+        JLabel labelAnio = new JLabel("  AÑO: ");
+        labelAnio.setForeground(Color.BLACK);
+        labelAnio.setFont(new Font("Arial", Font.BOLD, 18));
+        add(labelAnio);
         inputAnio = new JTextField();
+        inputAnio.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2));
+        inputAnio.setFont(new Font("Arial", Font.PLAIN, 16));
         add(inputAnio);
 
-        add(new JLabel("Color: "));
+        JLabel labelColor = new JLabel("  COLOR: ");
+        labelColor.setForeground(Color.BLACK);
+        labelColor.setFont(new Font("Arial", Font.BOLD, 18));
+        add(labelColor);
         inputColor = new JTextField();
+        inputColor.setBorder(BorderFactory.createLineBorder(Color.BLUE, 2));
+        inputColor.setFont(new Font("Arial", Font.PLAIN, 16));
         add(inputColor);
 
-        btnAdd = new JButton("Añadir: ");
+        btnAdd = new JButton("AÑADIR");
         btnAdd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -40,7 +56,14 @@ public class FormularioCoches extends JFrame {
             }
         });
         add(btnAdd);
+        JTextArea relleno = new JTextArea("");
+        relleno.setBackground(Color.BLACK);
+        add(relleno);
 
+        btnAdd.setBackground(Color.BLACK);
+        btnAdd.setForeground(Color.WHITE);
+        btnAdd.setBorder(BorderFactory.createLineBorder(Color.BLUE, 3));
+        btnAdd.setFont(new Font("Arial", Font.BOLD, 18));
         setVisible(true);
         
     }
@@ -53,18 +76,20 @@ public class FormularioCoches extends JFrame {
 
             if (marca.isBlank() || color.isBlank()){
                 JOptionPane.showMessageDialog(this, "Todos los campos son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
+            } else {
+
+                Coche.addCoche(coches, marca, anio, color);
+
+                JOptionPane.showMessageDialog(this, "Coche agregado correctamente", "Aviso", JOptionPane.INFORMATION_MESSAGE);
+
+                inputMarca.setText("");
+                inputAnio.setText("");
+                inputColor.setText("");
             }
 
-            Coche.agregarCoche(coches, marca, anio, color);
-
-            JOptionPane.showMessageDialog(this, "Coche agregado correctamente", "Exito", JOptionPane.INFORMATION_MESSAGE);
-
-            inputMarca.setText("");
-            inputAnio.setText("");
-            inputColor.setText("");
 
         } catch (NumberFormatException e){
-            JOptionPane.showMessageDialog(this, "El anio debe ser un numero valido", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "El año debe ser un numero valido", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 }

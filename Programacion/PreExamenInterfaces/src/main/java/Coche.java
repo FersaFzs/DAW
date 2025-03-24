@@ -63,7 +63,7 @@ public class Coche {
         return datos;
     }
 
-    public static void agregarCoche(ArrayList<Coche> coches, String marca, int anio, String color){
+    public static void addCoche(ArrayList<Coche> coches, String marca, int anio, String color){
         coches.add(new Coche(marca, anio, color));
     }
 }
