@@ -4,11 +4,10 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class TablaCoches extends JFrame {
-    public TablaCoches(){
-        ArrayList<Coche> datosCoches = Coche.generarCoches();
+    public TablaCoches(ArrayList<Coche> datosCoches){
         setTitle("Lista Coches");
         setSize(500,300);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setLocationRelativeTo(null);
 
         //Nombre columnas

@@ -1,3 +1,5 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.ArrayList;
 
 public class Coche {
@@ -40,12 +42,28 @@ public class Coche {
         return "Marca: " + marca + "\nAnio: " + anio + "\nColor: " + color;
     }
 
-    public static ArrayList<Coche> generarCoches(){
+    public static ArrayList<Coche> generarCoches(String path){
         ArrayList<Coche> datos = new ArrayList<>();
-        datos.add(new Coche("BMW", 2008, "Rojo"));
-        datos.add(new Coche("Toyota", 2017, "Azul"));
-        datos.add(new Coche("Nissan", 1998, "Blanco"));
-        datos.add(new Coche("Mercedes",2020 ,"Negro"));
+
+        try{
+            BufferedReader br = new BufferedReader(new FileReader(path));
+            String linea;
+            while((linea = br.readLine()) != null){
+                String[] valores = linea.split(",");
+                String marca = valores[0];
+                int anio = Integer.parseInt(valores[1]);
+                String color = valores[2];
+                datos.add(new Coche(marca, anio, color));
+            }
+
+        } catch (Exception e) {
+            throw new RuntimeException("Error procesando el archivo", e);
+        }
+
         return datos;
+    }
+
+    public static void agregarCoche(ArrayList<Coche> coches, String marca, int anio, String color){
+        coches.add(new Coche(marca, anio, color));
     }
 }
