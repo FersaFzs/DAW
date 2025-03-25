@@ -9,19 +9,37 @@ public class FormularioCoches {
         frameFormulario.setLocationRelativeTo(parent);
         frameFormulario.setLayout(new BorderLayout());
 
-        JPanel panel = new JPanel(new GridLayout(4,4,5,5));
+        JPanel panel = new JPanel(new GridLayout(3,2,5,10));
 
-        panel.add(new JLabel("MARCA:"));
+        JLabel labelMarca = new JLabel("  MARCA:");
+        panel.add(labelMarca);
         JTextField txtMarca = new JTextField();
         panel.add(txtMarca);
-        panel.add(new JLabel("ANIO:"));
+        JLabel labelAnio = new JLabel("  AÑO:");
+        panel.add(labelAnio);
         JTextField txtAnio = new JTextField();
         panel.add(txtAnio);
-        panel.add(new JLabel("COLOR:"));
+        JLabel labelColor = new JLabel("  COLOR:");
+        panel.add(labelColor);
         JTextField txtColor = new JTextField();
         panel.add(txtColor);
 
         JButton btnAdd = new JButton("AÑADIR");
+
+        //Estilos
+        labelMarca.setFont(new Font("Arial", Font.BOLD, 18));
+        labelAnio.setFont(new Font("Arial", Font.BOLD, 18));
+        labelColor.setFont(new Font("Arial", Font.BOLD, 18));
+        labelMarca.setForeground(Color.WHITE);
+        labelAnio.setForeground(Color.WHITE);
+        labelColor.setForeground(Color.WHITE);
+
+        btnAdd.setFont(new Font("Arial", Font.BOLD, 18));
+        btnAdd.setBackground(Color.BLACK);
+        btnAdd.setForeground(Color.WHITE);
+        btnAdd.setBorder(BorderFactory.createLineBorder(Color.WHITE, 1));
+        panel.setBackground(Color.BLACK);
+
         btnAdd.addActionListener(e -> {
             if(txtMarca.getText().isEmpty() || txtAnio.getText().isEmpty() || txtColor.getText().isEmpty()){
                 JOptionPane.showMessageDialog(frameFormulario, "Todos los campos son obligatorios", "AVISO", JOptionPane.INFORMATION_MESSAGE);

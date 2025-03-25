@@ -41,6 +41,17 @@ public class TablaCoches {
             }
         });
 
+        //Estilos
+        tabla.getTableHeader().setFont(new Font("Arial", Font.BOLD, 16));
+        tabla.getTableHeader().setBackground(Color.BLACK);
+        tabla.getTableHeader().setForeground(Color.WHITE);
+        tabla.getTableHeader().setBorder(BorderFactory.createLineBorder(Color.WHITE, 2));
+
+        tabla.setBackground(Color.DARK_GRAY);
+        tabla.setFont(new Font("Arial", Font.PLAIN, 14));
+        tabla.setForeground(Color.WHITE);
+
+
         frameTabla.add(new JScrollPane(tabla));
         frameTabla.setVisible(true);
     }
