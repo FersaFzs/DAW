@@ -1,0 +1,124 @@
+{  
+    "Recetas":[
+        {
+            "ID": 1,
+            "Nombre": "Pollo al limón",
+            "Tipo":"Cocina Mediterránea",
+            "Ingredientes":[
+                "Pechugas de Pollo",
+                "limón",
+                "ajo",
+                "tomillo",
+                "romero"
+            ],
+            "Pasos":[
+                {
+                    "Accion":"Mezclar",
+                    "Ingredientes":[
+                        "limón","ajo","tomillo","romero"
+                    ],
+                    "TiempoMin": 5
+                },
+                {
+                    "Accion":"Marinar",
+                    "Ingredientes":[
+                        "Pechugas de Pollo","mezcla"
+                    ],
+                    "TiempoMin": 15
+                },
+                {
+                    "Accion":"Dorar",
+                    "Ingredientes":[
+                        "Pechugas de Pollo"
+                    ],
+                    "TiempoMin": 20
+                },
+                {
+                    "Accion": "Servir",
+                    "Ingredientes":[
+                        "Pechugas de Pollo","limón","romero"
+                    ],
+                    "TiempoMin": 15
+                }
+            ],
+            "TiempoMin": 55,
+            "Rating": 4.8,
+            "Comentarios": [
+                {
+                    "Autor":"HealthyChef45",
+                    "Fecha":"16/04/2024",
+                    "Texto":"Una receta sencilla y saludable. ¡Me encanta!"
+                },
+                {
+                    "Autor":"CookingNovice",
+                    "Fecha":"14/4/2024",
+                    "Texto":"Mi primer intento con esta receta y quedó increíble. Gracias por compartirla."
+                },
+                {
+                    "Autor":"FoodieQueen23",
+                    "Fecha":"16/04/2024",
+                    "TextoResumen":"Deliciosa combinación de sabores y facilidad de preparación"
+                }
+            ]
+        },
+        {
+            "ID": 2,
+            "Nombre":"Tarta de Manzana Casera",
+            "Tipo":"Postre",
+            "Ingredientes":[
+                "Manzanas",
+                "Harina",
+                "azúcar",
+                "canela"
+            ],
+            "TiempoMin": 60,
+            "TiempoMinHorneado": 40,
+            "Pasos":[
+                {
+                    "Accion":"Cortar y colocar",
+                    "Ingredientes":[
+                        "Manzanas",
+                        "Masa"
+                    ],
+                    "TiempoMin": 15
+                },
+                {
+                    "Accion":"Espolvorear",
+                    "Ingredientes":[
+                        "azúcar",
+                        "canela"
+                    ],
+                    "TiempoMin": 5
+                },
+                {
+                    "Accion":"Cubrir",
+                    "Ingredientes":"masa",
+                    "TiempoMin": 10,
+                },
+                {
+                    "Accion":"Hornear",
+                    "Ingredientes":"Tarta",
+                    "TiempoMin":20
+                }
+            ],
+            "Rating": 4.5,
+            "Comentarios":[
+                {
+                    "Autor":"BakingEnthusiast99",
+                    "Fecha":"15/04/2024",
+                    "TextoResumen":"Perfecta para cualquier ocasión debido a su delicioso sabor"
+                },
+                {
+                    "Autor":"SweetTooth23",
+                    "Fecha":"14/04/2024",
+                    "Texto":"Esta tarta se ha convertido en un favorito en mi casa. ¡Gracias por la receta!"
+                },
+                {
+                   "Autor":"DessertQueen",
+                    "Fecha":"13/04/2024",
+                    "Texto":"¡Increíblemente deliciosa! No puedo esperar para hacerla de nuevo."
+                }
+            ]
+        }
+    ]
+}

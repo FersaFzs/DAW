@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlántida Software Dev</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/logo.png">
+        <h1>Gestión de Tareas Dev</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Información de la Empresa</h2>
+            <p><b>Nombre:</b> <span id="empresa-nombre"></span></p>
+            <p><b>Ubicación:</b> <span id="empresa-ubicacion"></span></p>
+        </section>
+        <section>
+            <h2>Proyecto</h2>
+            <div id="proyectos-container"></div>
+            <br>
+            <h2>Developers</h2>
+            <hr>
+        </section>
+        <section class="devs">
+            <div id="dev1" onclick="window.location.href='./dev1.html'">
+                <img src="img/pfp.png">
+                <p><b>Nombre:</b> <span class="dev-nombre"></span></p> <!-- Cambiado a class -->
+            </div>
+            <div id="dev2" onclick="window.location.href='./dev2.html'">
+                <img src="img/pfp.png">
+                <p><b>Nombre:</b> <span class="dev-nombre"></span></p> <!-- Cambiado a class -->
+            </div>
+        </section>
+    </main>
+
+    <script src="./software.js"></script>
+</body>
+</html>

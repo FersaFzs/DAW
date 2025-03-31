@@ -10,6 +10,7 @@
             {
               "nombre": "Juan Pérez",
               "rol": "Desarrollador",
+              "imagen": "./img/juan-perez.svg",
               "tareas": [
                 {
                   "nombre": "Diseño de interfaz de usuario",
@@ -30,6 +31,7 @@
             {
               "nombre": "María García",
               "rol": "Diseñadora",
+              "imagen": "./img/maria-garcia.svg",
               "tareas": [
                 {
                   "nombre": "Creación de logotipo",
