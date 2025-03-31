@@ -1,0 +1,55 @@
+{
+    "empresa": {
+      "nombre": "Atlantida Software Developers S.L.",
+      "ubicacion": "Edificio Manantia",
+      "proyectos": [
+        {
+          "nombre": "Desarrollo de Aplicación Web",
+          "objetivo": "Crear una aplicación para gestión de tareas",
+          "equipo": [
+            {
+              "nombre": "Juan Pérez",
+              "rol": "Desarrollador",
+              "tareas": [
+                {
+                  "nombre": "Diseño de interfaz de usuario",
+                  "descripcion": "Crear un diseño visual atractivo y funcional para la aplicación.",
+                  "fecha_inicio": "2024-04-01",
+                  "fecha_fin": "2024-04-15",
+                  "completada": true
+                },
+                {
+                  "nombre": "Implementación de la base de datos",
+                  "descripcion": "Diseñar y desarrollar la base de datos que soportará la aplicación.",
+                  "fecha_inicio": "2024-04-05",
+                  "fecha_fin": "2024-04-20",
+                  "completada": false
+                }
+              ]
+            },
+            {
+              "nombre": "María García",
+              "rol": "Diseñadora",
+              "tareas": [
+                {
+                  "nombre": "Creación de logotipo",
+                  "descripcion": "Diseñar el logotipo representativo de la aplicación.",
+                  "fecha_inicio": "2024-04-03",
+                  "fecha_fin": "2024-04-10",
+                  "completada": true
+                },
+                {
+                  "nombre": "Diseño de la página de inicio",
+                  "descripcion": "Crear el diseño visual y la estructura de la página principal de la aplicación.",
+                  "fecha_inicio": "2024-04-08",
+                  "fecha_fin": "2024-04-18",
+                  "completada": false
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  
