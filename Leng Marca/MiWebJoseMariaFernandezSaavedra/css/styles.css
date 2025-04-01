@@ -325,3 +325,16 @@ footer a:hover {
     word-wrap: break-word;
     flex-grow: 2; /* Hace que el texto ocupe más espacio */
 }
+
+.marioKart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.marioKart iframe{
+    height: 700px;
+    width: 467px;
+}
