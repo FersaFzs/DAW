@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformacion.xsl"?>
+
+<mice_catalog>
+  <mouse>
+    <brand>Logitech</brand>
+    <model>G Pro X Superlight</model>
+    <price>149.99</price>
+    <dpi>25600</dpi>
+    <connection>Wireless</connection>
+    <weight>63</weight>
+  </mouse>
+  <mouse>
+    <brand>Razer</brand>
+    <model>DeathAdder V3 Pro</model>
+    <price>159.99</price>
+    <dpi>30000</dpi>
+    <connection>Wireless</connection>
+    <weight>63</weight>
+  </mouse>
+  <mouse>
+    <brand>SteelSeries</brand>
+    <model>Aerox 5 Wireless</model>
+    <price>139.99</price>
+    <dpi>18000</dpi>
+    <connection>Wireless</connection>
+    <weight>74</weight>
+  </mouse>
+  <mouse>
+    <brand>HyperX</brand>
+    <model>Pulsefire Haste</model>
+    <price>59.99</price>
+    <dpi>16000</dpi>
+    <connection>Wired</connection>
+    <weight>59</weight>
+  </mouse>
+  <mouse>
+    <brand>Corsair</brand>
+    <model>Dark Core RGB Pro</model>
+    <price>89.99</price>
+    <dpi>18000</dpi>
+    <connection>Wireless</connection>
+    <weight>142</weight>
+  </mouse>
+  <mouse>
+    <brand>Roccat</brand>
+    <model>Kone Pro Air</model>
+    <price>129.99</price>
+    <dpi>19000</dpi>
+    <connection>Wireless</connection>
+    <weight>75</weight>
+  </mouse>
+  <mouse>
+    <brand>ASUS</brand>
+    <model>ROG Gladius III</model>
+    <price>99.99</price>
+    <dpi>26000</dpi>
+    <connection>Wired</connection>
+    <weight>79</weight>
+  </mouse>
+  <mouse>
+    <brand>Zowie</brand>
+    <model>EC2-CW</model>
+    <price>149.99</price>
+    <dpi>3200</dpi>
+    <connection>Wireless</connection>
+    <weight>77</weight>
+  </mouse>
+  <mouse>
+    <brand>Glorious</brand>
+    <model>Model O Wireless</model>
+    <price>79.99</price>
+    <dpi>19000</dpi>
+    <connection>Wireless</connection>
+    <weight>69</weight>
+  </mouse>
+  <mouse>
+    <brand>Endgame Gear</brand>
+    <model>XM2we</model>
+    <price>109.99</price>
+    <dpi>19000</dpi>
+    <connection>Wireless</connection>
+    <weight>63</weight>
+  </mouse>
+  <mouse>
+    <brand>Logitech</brand>
+    <model>G502 X Plus</model>
+    <price>159.99</price>
+    <dpi>25600</dpi>
+    <connection>Wireless</connection>
+    <weight>106</weight>
+  </mouse>
+  <mouse>
+    <brand>Razer</brand>
+    <model>Basilisk V3 Pro</model>
+    <price>159.99</price>
+    <dpi>30000</dpi>
+    <connection>Wireless</connection>
+    <weight>112</weight>
+  </mouse>
+  <mouse>
+    <brand>SteelSeries</brand>
+    <model>Rival 5</model>
+    <price>59.99</price>
+    <dpi>18000</dpi>
+    <connection>Wired</connection>
+    <weight>85</weight>
+  </mouse>
+  <mouse>
+    <brand>HyperX</brand>
+    <model>Pulsefire Dart</model>
+    <price>99.99</price>
+    <dpi>16000</dpi>
+    <connection>Wireless</connection>
+    <weight>112</weight>
+  </mouse>
+  <mouse>
+    <brand>Corsair</brand>
+    <model>Scimitar Elite RGB</model>
+    <price>79.99</price>
+    <dpi>18000</dpi>
+    <connection>Wired</connection>
+    <weight>122</weight>
+  </mouse>
+  <mouse>
+    <brand>Roccat</brand>
+    <model>Burst Pro Air</model>
+    <price>99.99</price>
+    <dpi>19000</dpi>
+    <connection>Wireless</connection>
+    <weight>81</weight>
+  </mouse>
+  <mouse>
+    <brand>ASUS</brand>
+    <model>ROG Chakram X</model>
+    <price>159.99</price>
+    <dpi>36000</dpi>
+    <connection>Wireless</connection>
+    <weight>127</weight>
+  </mouse>
+  <mouse>
+    <brand>Zowie</brand>
+    <model>FK1+-C</model>
+    <price>69.99</price>
+    <dpi>3200</dpi>
+    <connection>Wired</connection>
+    <weight>90</weight>
+  </mouse>
+  <mouse>
+    <brand>Glorious</brand>
+    <model>Model D Wireless</model>
+    <price>89.99</price>
+    <dpi>19000</dpi>
+    <connection>Wireless</connection>
+    <weight>75</weight>
+  </mouse>
+  <mouse>
+    <brand>Endgame Gear</brand>
+    <model>OP1we</model>
+    <price>119.99</price>
+    <dpi>19000</dpi>
+    <connection>Wireless</connection>
+    <weight>58</weight>
+  </mouse>
+</mice_catalog>
